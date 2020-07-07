@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>Sapsons</title>
+    <!-- ================> mobile first <===============  -->
+    <meta name="viewport" content="width=device-width">
+    <!-- ================> StyleSheet css <===============  -->
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/flipclock.css">
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="http://allfont.ru/allfont.css?fonts=a_lcdnova" rel="stylesheet">
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.10.1.js" integrity="sha256-663tSdtipgBgyqJXfypOwf9ocmvECGG8Zdl3q+tk+n0=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div class="header-logo">
+            <a href="#"><img src="img/Shcool.svg" alt="logo"></a>
+            <p class="text-school">
+            </p>
+          </div>
+          <div class="header-sozsety">
+            <a href="https://twitter.com/?lang=ru"><img src="img/twitt.svg" alt="twitter"></a>
+            <a href="https://www.instagram.com"><img src="img/F1.svg" alt="instagram"></a>
+            <a href="https://www.facebook.com"><img src="img/fac.svg" alt="facebook"></a>
+            <button id='myBtn' class="button-header">
+              <img class="zvon" src="img/Vector.png" alt="">
+              <a href="#">Заказать звонок</a>
+            </button>
+            <div id='mypopup' class="popup">
+              <div class="popupContent">
+                <div class="popupBox">
+                  <h3 class="poph3"> Заказать звонок </h3>
+                  <p>Заполните форму, и наш менеджер с вами свяжется в ближайшее время</p>
+                  <span class="close">&times;</span>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <form action="">
+                      <div class="input">
+                        <label for="">
+                          <input type="text" id="name" name="name" placeholder="Имя" required>
+                        </label>
+                        <label for="">
+                          <input type="tel" id="phone" name="phone" placeholder="+380_" pattern="[0-9]{5}[0-9]{3}[0-9]{2}[0-9]{2}" required>
+                        </label>
+                        <button class="imgOtp">
+                          <p>ОТПРАВИТЬ</p>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <section class="section__top-header">
+        <div class="container">
+          <div class="row">
+            <div class="top-header_box">
+              <div class="top-header_titleh1">
+                <h1>Как достичь <br> успеха</h1>
+              </div>
+              <div class="top-header_block1">
+                <p class="block1"> Практический онлайн-марафон для начинающих </p>
+              </div>
+              <div class="top-header_block2">
+                <div class="block2">
+                  <p>СТАРТ</p>
+                  <h3 class="seven">28</h3>
+                  <p>августа </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__center-header">
+        <div class="container">
+          <div class="row">
+            <div class="centrer-header_box1">
+              <p> Получите <span>драгоценный опыт руководителей,</span> которые самостоятельно протоптали себе дорожку:</p>
+            </div>
+            <div class="centrer-header_box2 to">
+              <p class="box2-title">01</p>
+              <p class="box2-text"> Запустить процесс обучения,</p>
+            </div>
+            <div class="centrer-header_box2">
+              <p class="box2-title">02</p>
+              <p class="box2-text"> Саморганизация себя как личность,</p>
+            </div>
+            <div class="centrer-header_box2">
+              <p class="box2-title">03</p>
+              <p class="box2-text"> Начать реализовывать его в реальность.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__footer-header">
+        <div class="container">
+          <div class="row">
+            <div class="footer-header_box">
+              <div class="footer-header_text">
+                <p> Забронируйте место пока работает таймер и получите бесплатно 1-й урок </p>
+              </div>
+              <div class="clock1">
+                <div class="clock"></div>
+                <div class="message"></div>
+              </div>
+              <div class="button_foot">
+                <a href="#myBtnX">
+								<p>Забронировать</p>
+							</a>
+              </div>
+              <div id='mypopupX' class="popupX">
+                <div class="popupContentX">
+                  <div class="popupBoxX">
+                    <h3 class="poph3X"> Бронирование участия </h3>
+                    <p> Чтобы забронировать и оплатить выбранный пакет участия, заполните форму</p>
+                    <span class="closeX">&times;</span>
+                    <div class="page__bron">
+                      <img src="img/Layer 1.png" alt="tip">
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <form action="">
+                        <div class="inputX">
+                          <label for="">
+                            <input type="text" id="name" name="name" placeholder="Имя" required>
+                          </label>
+                          <label for="">
+                            <input type="tel" id="phone" name="phone" placeholder="+380_" pattern="[0-9]{5}[0-9]{3}[0-9]{2}[0-9]{2}" required>
+                          </label>
+                          <label for="">
+                            <input type="email" id="email" pattern="" placeholder=" Эл. почта" required>
+                          </label>
+                          <button class="imgOtpX">
+                            <p>ОТПРАВИТЬ</p>
+                          </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="sectionf-men">
+      <div class="container">
+        <div class="row">
+          <div class="section_box-man">
+            <div class="right-man">
+              <div class="right-man_head">
+                <img class="right-man_img" src="img/minGreen.svg" alt="">
+                <p class="right_title"> Путь руководителя </p>
+              </div>
+              <div class="right-man_foot">
+                <h2 class="tittle_h2"> Вы видите,<span></span> как кто-то занимаеться разработкой сайтов </h2>
+                <p> Планирует свое время на отдых<br> учебу и домашние дела. <span>И как ему это удается? </span>
+                </p>
+              </div>
+            </div>
+            <div class="right-man">
+              <img class="img_man" src="img/Layer 1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionf-men_center">
+      <div class="container">
+        <div class="row">
+          <div class="sectionf-men_centerBox">
+            <div class="centerBox1">
+              <p class="box1_text"> Совсем недавно я был на<br> месте многоих из вас,<br> и думал я не смогу<br> достичь того, к чему я
+							пришел
+						</p>
+                <img class="Stre" src="img/Stre.png" alt="">
+                <img class="StreV" src="img/StreV.png" alt="">
+            </div>
+            <div class="centerBox2">
+              <p class="zif"> 01 </p>
+              <div class="boz2_text"> У вас нет опыта, знаний и уверенности </div>
+            </div>
+            <div class="centerBox2">
+              <p class="zif"> 02 </p>
+              <div class="boz2_text"> У Вас нет понимания того с чего пержде нужно начать </div>
+            </div>
+            <div class="centerBox2">
+              <p class="zif"> 03 </p>
+              <div class="boz2_text"> И вы не работали и не понимаете как оно работает </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionf-man_footer" id="sectionf-man_footer">
+      <div class="container">
+        <div class="row">
+          <div class="sectionf-man_footerbox">
+            <div class="footer_head-text">
+              <p class="text_head"> Это стереотипы, которые мешают Вам зарабатывать. Я помогу вам их разрушить. </p>
+              <p class="text_foot"> У Вас для этого есть <span> все шансы</span> для тостижение многого с нуля: </p>
+            </div>
+            <div class="footer_head-text">
+              <p class="sek">43</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="center slider">
+        <div class="video">
+          <video class="video_pleyer" controls='controls' loop poster="img/V.jpg">
+            <source src="video/S.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          </video>
+          <h3 class="video_h3"> Безбородов Марк (56 лет), Риелтор </h3>
+          <p class="video_p"> Вышел на доход 14 000 грн. в месяц, начиная без знаний и стартового капитала. </p>
+        </div>
+        <div class="video">
+          <video class="video_pleyer" controls='controls' loop poster="img/V.jpg">
+            <source src="video/S.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          </video>
+          <h3 class="video_h3"> Безбородов Марк (50 лет), Риелтор </h3>
+          <p class="video_p"> Вышел на доход 12 000 грн. в месяц, начиная без знаний и стартового капитала. </p>
+        </div>
+        <div class="video">
+          <video class="video_pleyer" controls='controls' loop poster="img/V.jpg">
+            <source src="video/S.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          </video>
+          <h3 class="video_h3"> Безбородов Марк (50 лет), Риелтор </h3>
+          <p class="video_p"> Вышел на доход 12 000 грн. в месяц, начиная без знаний и стартового капитала. </p>
+        </div>
+        <div class="video">
+          <video class="video_pleyer" controls='controls' loop poster="img/V.jpg">
+            <source src="video/S.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          </video>
+          <h3 class="video_h3"> Константинопольский Константин (28 года), Риелтор </h3>
+          <p class="video_p"> Денис ломает стереотипы и очень мотивирует. За месяц обучения у меня 3 квартиры в субаренде. </p>
+        </div>
+        <div class="video">
+          <video class="video_pleyer" controls='controls' loop poster="img/V.jpg">
+            <source src="video/S.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          </video>
+          <h3 class="video_h3"> Илья новиков (18 лет), Риелтор </h3>
+          <p class="video_p"> Запустил 3 квартиры в 3-х разный районах и нашел то самое прибыльное место. </p>
+        </div>
+        <div class="video">
+          <video class="video_pleyer" controls='controls' loop poster="img/V.jpg">
+            <source src="video/S.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          </video>
+          <h3 class="video_h3"> Безбородов Марк (56 лет), Риелтор </h3>
+          <p class="video_p"> Вышел на доход 14 000 грн. в месяц, начиная без знаний и стартового капитала. </p>
+        </div>
+        <div class="video">
+          <video class="video_pleyer" controls='controls' loop poster="img/V.jpg">
+            <source src="video/S.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          </video>
+          <h3 class="video_h3"> Безбородов Марк (56 лет), Риелтор </h3>
+          <p class="video_p"> Вышел на доход 14 000 грн. в месяц, начиная без знаний и стартового капитала. </p>
+        </div>
+      </section>
+      <div class="container">
+        <div class="row">
+          <div class="button__otsiv" id="showContent">
+            <p> БОЛЬШЕ ОТЗЫВОВ </p>
+          </div>
+        </div>
+      </div>
+      <div class="content" id="content">
+        <div class="container">
+          <div class="row">
+            <div class="content__onsiv">
+              <div class="colone">
+                <div class="otsiv__block">
+                  <img src="img/user.png" alt="man">
+                  <h4>Константинопольский Константин</h4>
+                  <p>Всем привет!!! Хочу поделится своим опытом использования AirPods(в использовании 3 дня), которыми я очень доволен. Это мои вторые беспроводные наушники, первыми были LG Tone Infinim (HBS-900) с использовании 3 года, причина замены: перестал работать один наушник. Вот решил сделать себе подарок на новый год Использую с Android телефоном LG G5.</p>
+                </div>
+                <div class="otsiv__block">
+                  <img src="img/user.png" alt="man">
+                  <h4>Константинопольский Константин</h4>
+                  <p>Всем привет!!! Хочу поделится своим опытом использования AirPods(в использовании 3 дня), которыми я очень доволен.</p>
+                </div>
+              </div>
+              <div class="coltue">
+                <div class="otsiv__block">
+                  <img src="img/user.png" alt="man">
+                  <h4>Константинопольский Константин</h4>
+                  <p>Всем привет!!! Хочу поделится своим опытом использования AirPods(в использовании 3 дня), которыми я очень доволен.</p>
+                </div>
+                <div class="otsiv__block">
+                  <img src="img/user.png" alt="man">
+                  <h4>Константинопольский Константин</h4>
+                  <p> Всем привет!!! Хочу поделится своим опытом использования AirPods(в использовании 3 дня), которыми я очень доволен. Это мои вторые беспроводные наушники, первыми были LG Tone Infinim (HBS-900) с использовании 3 года, причина замены: перестал работать один наушник. Вот решил сделать себе подарок на новый год Использую с Android телефоном LG G5.Tone Infinim (HBS-900) с использовании 3 года, причина замены: перестал работать один наушник. Вот решил сделать себе подарок на новый год Использую с Android телефоном LG G5.</p>
+                </div>
+              </div>
+              <div class="colfrie">
+                <div class="otsiv__block">
+                  <img src="img/user.png" alt="man">
+                  <h4>Константинопольский Константин</h4>
+                  <p> Всем привет!!! Хочу поделится своим опытом использования AirPods(в использовании 3 дня), которыми я очень доволен. Это мои вторые беспроводные наушники, первыми были LG Tone Infinim (HBS-900) с использовании 3 года, причина замены.</p>
+                </div>
+                <div class="otsiv__block">
+                  <img src="img/user.png" alt="man">
+                  <h4>Константинопольский Константин</h4>
+                  <p>Всем привет!!! Хочу поделится своим опытом использования AirPods(в использовании 3 дня), которыми я очень доволен.</p>
+                </div>
+              </div>
+            </div>
+            <div class="button__otsiv" id="hideContent">
+              <p> СВЕРНУТЬ </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <section class="sectionAlgoritm">
+      <div class="container">
+        <div class="row">
+          <div class="sectionAlgoritm__AllBox">
+            <div class="sectionAlgoritm__colOne">
+              <div class="sectionAlgoritm__colOneHeader">
+                <img src="img/minGreen.svg" alt="" class="colOne__img">
+                <h3 class="colOne__h3"> Главное, что Вам нужно сейчас </h3>
+              </div>
+              <p class="colOne__p"> простой алгоритм успешных действий, используя который Вы быстро заработаете первые деньги в недвижимости, без рисков “прощупаете” рынок, освоите инвестиционный инструмент. </p>
+            </div>
+            <div class="sectionAlgoritm__colTue">
+              <div class="sectionAlgoritm__colTueBox">
+                <p class="colOne__pOne"> 01 </p>
+                <p class="colOne__pTue"> Навык заработка без инвестиций, освоив 2 простых инструмента, с помощью которых обеспечите семью и создадите платформу для развития. </p>
+              </div>
+              <div class="sectionAlgoritm__colTueBox secTop">
+                <p class="colOne__pOne"> 02 </p>
+                <p class="colOne__pTue"> Бизнес, приносящий пассивный доход от 30% годовых — Вы получаете деньги при минимальном участии. </p>
+              </div>
+              <div class="sectionAlgoritm__colTueBox">
+                <p class="colOne__pOne"> 03 </p>
+                <p class="colOne__pTue"> Систему инвестирования в ликвидные объекты с высоким доходом — вы действуете точечно, не распыляясь на объекты, которые того не стоят </p>
+              </div>
+              <div class="sectionAlgoritm__colTueBox secTop">
+                <p class="colOne__pOne"> 04 </p>
+                <p class="colOne__pTue"> Понимание, как работает рынок недвижимости, чтобы выгодно покупать/продавать/арендовать/сдавать </p>
+              </div>
+              <div class="sectionAlgoritm__colTueBox">
+                <p class="colOne__pOne"> 05 </p>
+                <p class="colOne__pTue"> План действий, основанный на 12-летнем практическом опыте инвестора, чтобы действовать без ошибок, не терять время и деньги </p>
+              </div>
+              <div class="sectionAlgoritm__colTueBox secTop">
+                <p class="colOne__pOne"> 06 </p>
+                <p class="colOne__pTue"> Фундамент для масштабирования без границ через инструмент, который Вам дается проще и приносит больше доход, чем другие </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionModul">
+      <div class="container">
+        <div class="row">
+          <div class="sectionModul__titleOne">
+            <div class="sectionModul__titleHeader">
+              <img src="img/minGreen.svg" alt="" class="titleOne__img">
+              <h3 class="titleOne__h3"> Модули курса </h3>
+            </div>
+            <div class="sectionModul__titleh3">
+              <h3>Конкретные шаги, которые приведут Вас к заработку на недвижимости</h3>
+            </div>
+            <div class="sectionModul__titlep">
+              <p>я упаковал в 8 практических модулей</p>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__box ">
+              <div class="modulBox">
+                <img src="img/minGreen.svg" alt="">
+                <p>Модуль 1 </p>
+              </div>
+              <div class="modulBoxh4">
+                <p> Анализ рынка и конкурентов </p>
+              </div>
+              <div class="modulBoxp">
+                <p><span>Результат:</span><br>
+								Найдены объекты, которые пользуются наибольшем спросом у Вас в городе, понятны предложения
+								конкурентов, знаете, кто, что и за сколько арендует.</p>
+                  <div class="modulBoxZen">
+                    <p><span>$180</span> Ценность</p>
+                  </div>
+              </div>
+              <input type="checkbox" id="tab1" name="tab-group">
+              <label for="tab1" class="accordion__title"></label>
+              <section class="accordion__content">
+                <div class="Urok">
+                  <p class="Urok__title"> Урок 1 </p>
+                  <p class="Urok__discription">Какую Недвижимость лучше всего рассматривать на старте для бизнеса </p>
+                </div>
+                <div class="Urok">
+                  <p class="Urok__title"> Урок 2 </p>
+                  <p class="Urok__discription">Анализ рынка и конкурентов</p>
+                </div>
+                <div class="Urok">
+                  <p class="Urok__title"> Урок 3 </p>
+                  <p class="Urok__discription"> Анализ лучших районов своего города</p>
+                </div>
+                <div class="Urok">
+                  <p class="Urok__title"> Урок 4 </p>
+                  <p class="Urok__discription">Анализ Целевой Аудитории для своего города </p>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__box ">
+              <div class="modulBox">
+                <img src="img/minGreen.svg" alt="">
+                <p>Модуль 2 </p>
+              </div>
+              <div class="modulBoxh4">
+                <p> Тест стратегии в вашем городе и первый доход на перенаселении </p>
+              </div>
+              <div class="modulBoxp">
+                <p><span>Результат:</span><br> Вы оценили на практике, как работают Ваши объявления, сколько людей
+								по ним звонит. Вы получили первых клиентов и отдали их на перезаселение за %. Заработаны первые
+								деньги в недвижимости.</p>
+                  <div class="modulBoxZen">
+                    <p><span>$180</span> Ценность</p>
+                  </div>
+              </div>
+              <input type="checkbox" id="tab2" name="tab-group">
+              <label for="tab2" class="accordion__title"></label>
+              <section class="accordion__content">
+                <div class="Urok">
+                  <p class="Urok__title"> Урок 1 </p>
+                  <p class="Urok__discription">Какую Недвижимость лучше всего рассматривать на старте для бизнеса </p>
+                </div>
+                <div class="Urok">
+                  <p class="Urok__title"> Урок 2 </p>
+                  <p class="Urok__discription">Анализ рынка и конкурентов</p>
+                </div>
+                <div class="Urok">
+                  <p class="Urok__title"> Урок 3 </p>
+                  <p class="Urok__discription"> Анализ лучших районов своего города</p>
+                </div>
+                <div class="Urok">
+                  <p class="Urok__title"> Урок 4 </p>
+                  <p class="Urok__discription">Анализ Целевой Аудитории для своего города </p>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__box ">
+              <div class="modulBox">
+                <img src="img/minGreen.svg" alt="">
+                <p>Модуль 3 </p>
+              </div>
+              <div class="modulBoxh4">
+                <p> Тест стратегии в вашем городе и первый доход на перенаселении </p>
+              </div>
+              <div class="modulBoxp">
+                <p><span>Результат:</span><br> Вы оценили на практике, как работают Ваши объявления, сколько людей
+								по ним звонит. Вы получили первых клиентов и отдали их на перезаселение за %. Заработаны первые
+								деньги в недвижимости.</p>
+                  <div class="modulBoxZen">
+                    <p><span>$180</span> Ценность</p>
+                  </div>
+              </div>
+              <input type="checkbox" id="tab3" name="tab-group">
+              <label for="tab3" class="accordion__title"></label>
+              <section class="accordion__content">
+                <div class="Urok">
+                  <p class="Urok__title"> Урок 1 </p>
+                  <p class="Urok__discription">Какую Недвижимость лучше всего рассматривать на старте для бизнеса </p>
+                </div>
+                <div class="Urok">
+                  <p class="Urok__title"> Урок 2 </p>
+                  <p class="Urok__discription">Анализ рынка и конкурентов</p>
+                </div>
+                <div class="Urok">
+                  <p class="Urok__title"> Урок 3 </p>
+                  <p class="Urok__discription"> Анализ лучших районов своего города</p>
+                </div>
+                <div class="Urok">
+                  <p class="Urok__title"> Урок 4 </p>
+                  <p class="Urok__discription">Анализ Целевой Аудитории для своего города </p>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="allModul" id="sContentt">
+            <p> еще 5 модулей </p>
+          </div>
+          <div class="Content" id="contentt">
+            <div class="accordion">
+              <div class="accordion__box ">
+                <div class="modulBox">
+                  <img src="img/minGreen.svg" alt="">
+                  <p>Модуль 4 </p>
+                </div>
+                <div class="modulBoxh4">
+                  <p> Тест стратегии в вашем городе и первый доход на перенаселении </p>
+                </div>
+                <div class="modulBoxp">
+                  <p><span>Результат:</span><br> Вы оценили на практике, как работают Ваши объявления, сколько
+									людей
+									по ним звонит. Вы получили первых клиентов и отдали их на перезаселение за %. Заработаны
+									первые
+									деньги в недвижимости.</p>
+                    <div class="modulBoxZen">
+                      <p><span>$180</span> Ценность</p>
+                    </div>
+                </div>
+                <input type="checkbox" id="tab4" name="tab-group">
+                <label for="tab4" class="accordion__title"></label>
+                <section class="accordion__content">
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 1 </p>
+                    <p class="Urok__discription">Какую Недвижимость лучше всего рассматривать на старте для бизнеса </p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 2 </p>
+                    <p class="Urok__discription">Анализ рынка и конкурентов</p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 3 </p>
+                    <p class="Urok__discription"> Анализ лучших районов своего города</p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 4 </p>
+                    <p class="Urok__discription">Анализ Целевой Аудитории для своего города </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__box ">
+                <div class="modulBox">
+                  <img src="img/minGreen.svg" alt="">
+                  <p>Модуль 5 </p>
+                </div>
+                <div class="modulBoxh4">
+                  <p> Тест стратегии в вашем городе и первый доход на перенаселении </p>
+                </div>
+                <div class="modulBoxp">
+                  <p><span>Результат:</span><br> Вы оценили на практике, как работают Ваши объявления, сколько
+									людей
+									по ним звонит. Вы получили первых клиентов и отдали их на перезаселение за %. Заработаны
+									первые
+									деньги в недвижимости.</p>
+                    <div class="modulBoxZen">
+                      <p><span>$180</span> Ценность</p>
+                    </div>
+                </div>
+                <input type="checkbox" id="tab5" name="tab-group">
+                <label for="tab5" class="accordion__title"></label>
+                <section class="accordion__content">
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 1 </p>
+                    <p class="Urok__discription">Какую Недвижимость лучше всего рассматривать на старте для бизнеса </p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 2 </p>
+                    <p class="Urok__discription">Анализ рынка и конкурентов</p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 3 </p>
+                    <p class="Urok__discription"> Анализ лучших районов своего города</p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 4 </p>
+                    <p class="Urok__discription">Анализ Целевой Аудитории для своего города </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__box ">
+                <div class="modulBox">
+                  <img src="img/minGreen.svg" alt="">
+                  <p>Модуль 6 </p>
+                </div>
+                <div class="modulBoxh4">
+                  <p> Тест стратегии в вашем городе и первый доход на перенаселении </p>
+                </div>
+                <div class="modulBoxp">
+                  <p><span>Результат:</span><br> Вы оценили на практике, как работают Ваши объявления, сколько
+									людей
+									по ним звонит. Вы получили первых клиентов и отдали их на перезаселение за %. Заработаны
+									первые
+									деньги в недвижимости.</p>
+                    <div class="modulBoxZen">
+                      <p><span>$180</span> Ценность</p>
+                    </div>
+                </div>
+                <input type="checkbox" id="tab6" name="tab-group">
+                <label for="tab6" class="accordion__title"></label>
+                <section class="accordion__content">
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 1 </p>
+                    <p class="Urok__discription">Какую Недвижимость лучше всего рассматривать на старте для бизнеса </p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 2 </p>
+                    <p class="Urok__discription">Анализ рынка и конкурентов</p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 3 </p>
+                    <p class="Urok__discription"> Анализ лучших районов своего города</p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 4 </p>
+                    <p class="Urok__discription">Анализ Целевой Аудитории для своего города </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__box ">
+                <div class="modulBox">
+                  <img src="img/minGreen.svg" alt="">
+                  <p>Модуль 7 </p>
+                </div>
+                <div class="modulBoxh4">
+                  <p> Тест стратегии в вашем городе и первый доход на перенаселении </p>
+                </div>
+                <div class="modulBoxp">
+                  <p><span>Результат:</span><br> Вы оценили на практике, как работают Ваши объявления, сколько
+									людей
+									по ним звонит. Вы получили первых клиентов и отдали их на перезаселение за %. Заработаны
+									первые
+									деньги в недвижимости.</p>
+                    <div class="modulBoxZen">
+                      <p><span>$180</span> Ценность</p>
+                    </div>
+                </div>
+                <input type="checkbox" id="tab7" name="tab-group">
+                <label for="tab7" class="accordion__title"></label>
+                <section class="accordion__content">
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 1 </p>
+                    <p class="Urok__discription">Какую Недвижимость лучше всего рассматривать на старте для бизнеса </p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 2 </p>
+                    <p class="Urok__discription">Анализ рынка и конкурентов</p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 3 </p>
+                    <p class="Urok__discription"> Анализ лучших районов своего города</p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 4 </p>
+                    <p class="Urok__discription">Анализ Целевой Аудитории для своего города </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion__box ">
+                <div class="modulBox">
+                  <img src="img/minGreen.svg" alt="">
+                  <p>Модуль 8 </p>
+                </div>
+                <div class="modulBoxh4">
+                  <p> Тест стратегии в вашем городе и первый доход на перенаселении </p>
+                </div>
+                <div class="modulBoxp">
+                  <p><span>Результат:</span><br> Вы оценили на практике, как работают Ваши объявления, сколько
+									людей
+									по ним звонит. Вы получили первых клиентов и отдали их на перезаселение за %. Заработаны
+									первые
+									деньги в недвижимости.</p>
+                    <div class="modulBoxZen">
+                      <p><span>$180</span> Ценность</p>
+                    </div>
+                </div>
+                <input type="checkbox" id="tab" name="tab-group">
+                <label for="tab" class="accordion__title"></label>
+                <section class="accordion__content">
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 1 </p>
+                    <p class="Urok__discription">Какую Недвижимость лучше всего рассматривать на старте для бизнеса </p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 2 </p>
+                    <p class="Urok__discription">Анализ рынка и конкурентов</p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 3 </p>
+                    <p class="Urok__discription"> Анализ лучших районов своего города</p>
+                  </div>
+                  <div class="Urok">
+                    <p class="Urok__title"> Урок 4 </p>
+                    <p class="Urok__discription">Анализ Целевой Аудитории для своего города </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="sectionAlgoritm__footer">
+            <div class="footer__title">
+              <p>Ваш главный результат от прохождения курса </p>
+            </div>
+            <div class="footer__titleImg">
+              <img src="img/fon.svg" alt="">
+              <p>Вы получите и создадите работающую модель заработка на недвижимости без риска собственными средствами</p>
+            </div>
+            <div class="footer__titleImg">
+              <img src="img/ftu.svg" alt="">
+              <p>Научитесь находить объекты по цене на 30% ниже рынка,</p>
+            </div>
+            <div class="footer__titleImg">
+              <img src="img/ffr.svg" alt="">
+              <p> Видеть возможности заработать там, где не видят другие.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionTimeblock">
+      <div class="container">
+        <div class="row">
+          <div class="sectionTimeblock__Box">
+            <div class="sectionTimeblock__BoxLeft">
+              <h3 class="sectionTimeblock__Boxh3"> Присоединяйтесь к онлайн-программе “Доходная недвижимость” </h3>
+              <p class="sectionTimeblock__Boxp"> Забронируйте участие пока работает таймер и получите бесплатно доступ к 1-му уроку (ценность $50) </p>
+              <img src="img/StreVp.png" alt="" class="sectionTimeblock__Boximg">
+              <img src="img/StreBv.png" alt="" class="sectionTimeblock__BoximgT">
+            </div>
+            <div class="sectionTimeblock__BoxRight">
+              <img src="" alt="" class="sectionTimeblock__Boximgr">
+            </div>
+          </div>
+          <div class="clockBox">
+            <div class="clockz"></div>
+            <div class="message"></div>
+            <div class="button__clockz">
+              <p> забронировать </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionConzentrat">
+      <div class="container">
+        <div class="row">
+          <div class="sectionConzentratBox">
+            <div class="sectionConzentratBox__imgLeft">
+              <img src="img/manRed.png" alt="">
+            </div>
+            <div class="sectionConzentratBox__Right">
+              <div class="sectionConzentratBox__RightTop">
+                <img src="img/minGreen.svg" alt="">
+                <p>Онлайн-курс “Доходная недвижимость”</p>
+              </div>
+              <div class="sectionConzentratBox_RightTitle">
+                <h3>это концентрат моего 12-летнего опыта в инвестировании</h3>
+                <p>За это время я прошел путь от новичка в недвижимости до успешного застройщика. И вот, к чему это привело</p>
+              </div>
+              <div class="sectionConzentratBox_RightBox">
+                <div class="sectionConzentratBox__RightTitleBox_on">
+                  <p><span>10 000 м2</span> построенных объектов </p>
+                  <p><span>1 000 000</span> инвестировал в недвижимость </p>
+                </div>
+                <div class="sectionConzentratBox__RighBox_tue">
+                  <p><span>$86 000 </span>“вложил” в ошибки, теперь инвестирую в обучение.</p>
+                  <p><span>$8 000</span> инвестировал в обучение в этом году.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionSlider">
+      <div class="container">
+        <div class="row">
+          <div class="saectionSlider__Box">
+            <div class="saectionSlider__Boxh3">
+              <h3>Как и сколько я зарабатываю на разных объектах недвижимости</h3>
+            </div>
+            <div class="saectionSlider__BoxSlider">
+              <div class="slider">
+                <a class="prev" onclick="minusSlide()"><img src="img/ArrowL.png" alt=""></a>
+                <div class="item">
+                  <img src="img/Page.png" alt="Второй слайд">
+                  <div class="slideText"></div>
+                  <div class="saectionSlider">
+                    <p>$14 500 Купил </p>
+                    <p>$15 00 Вложил </p>
+                    <p>700 Реклама </p>
+                    <p>70 000 Продал</p>
+                    <h4>$39 700 <span>Чистый доход</span> </h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/Page.png" alt="Второй слайд">
+                  <div class="slideText"></div>
+                  <div class="saectionSlider">
+                    <p>$10 500 Купил </p>
+                    <p>$17 00 Вложил </p>
+                    <p>400 Реклама </p>
+                    <p>40 000 Продал</p>
+                    <h4>$19 700 <span>Чистый доход</span> </h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/Page.png" alt="Третий слайд">
+                  <div class="slideText"></div>
+                  <div class="saectionSlider">
+                    <p>$11 500 Купил </p>
+                    <p>$18 00 Вложил </p>
+                    <p>900 Реклама </p>
+                    <p>30 000 Продал</p>
+                    <h4>$69 700 <span>Чистый доход</span> </h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/Page.png" alt="Третий слайд">
+                  <div class="slideText"></div>
+                  <div class="saectionSlider">
+                    <p>$15 500 Купил </p>
+                    <p>$12 00 Вложил </p>
+                    <p>600 Реклама </p>
+                    <p>90 000 Продал</p>
+                    <h4>$90 700 <span>Чистый доход</span> </h4>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/Page.png" alt="Третий слайд">
+                  <div class="slideText"></div>
+                  <div class="saectionSlider">
+                    <p>$13 500 Купил</p>
+                    <p>$11 00 Вложил</p>
+                    <p>100 Реклама </p>
+                    <p>40 000 Продал</p>
+                    <h4>$29 700 <span>Чистый доход</span> </h4>
+                  </div>
+                </div>
+                <a class="next" onclick="plusSlide()"><img src="img/ArrowP.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionWishes">
+      <div class="container">
+        <div class="row">
+          <div class="sectionWishes__box">
+            <div class="sectionWishes__h3">
+              <h3>Мое желание делиться опытом с теми, кто хочет освоить прибыльное инвестирование в недвижимость поддержали</h3>
+            </div>
+            <div class="sectionWishes__rightBox">
+              <div class="sectionWishes__right">
+                <div class="ManOne__img">
+                  <img src="img/ManOne.png" class="B" alt="">
+                  <img src="img/ManOneM.png" class="M" alt="">
+                </div>
+                <div class="sectionWishes__rightTitle">
+                  <h3>Тимофеев Олесь </h3>
+                  <h4>основатель «GeniusMarketing»</h4>
+                  <p>Бизнесмен, онлайн-предприниматель, основатель GeniusMarketing и один из лучших стратегов Украины в интернет-маркетинге.</p>
+                  <p>Изучал международную экономику в Национальной академии управления. В бизнесе с 19 лет. Занимался продвижением офлайн-магазинов косметики, а также продавал ее через интернет. В 2012 году влился в интернет-маркетинг. Спустя год ушел из прибыльного бизнеса и создал свой, полностью перейдя в нишу интернет-образования. На 4-й месяц развития бизнеса компания Олеся вышла на оборот более $70.000+/мес.</p>
+                  <p> Благодаря эффективному внедрению новых тактик и стратегий продвижения бизнеса онлайн из США, компания GeniusMarketing стала №1 для обучения предпринимателей развитию бизнеса в интернете на просторах Украины и других стран СНГ.</p>
+                </div>
+              </div>
+              <div class="sectionWishes__right">
+                <div class="ManOne__img">
+                  <img src="img/ManOne.png" class="B" alt="">
+                  <img src="img/ManOneM.png" class="M" alt="">
+                </div>
+                <div class="sectionWishes__rightTitle">
+                  <h3>артем нестеренко </h3>
+                  <h4>инфобизнесмен</h4>
+                  <p>Бизнесмен, онлайн-предприниматель, основатель GeniusMarketing и один из лучших стратегов Украины в интернет-маркетинге.</p>
+                  <p>Изучал международную экономику в Национальной академии управления. В бизнесе с 19 лет. Занимался продвижением офлайн-магазинов косметики, а также продавал ее через интернет. В 2012 году влился в интернет-маркетинг.</p>
+                </div>
+              </div>
+              <div class="sectionWishes__right">
+                <div class="ManOne__img">
+                  <img src="img/ManOne.png" class="B" alt="">
+                  <img src="img/ManOneM.png" class="M" alt="">
+                </div>
+                <div class="sectionWishes__rightTitle">
+                  <h3>Ицхак пинтосевич </h3>
+                  <h4>ЭКСПЕРТ В СИСТЕМНОМ РАЗВИТИИ ЛИЧНОСТИ, ПОЧЕТНЫЙ ПРОФЕССОР БИЗНЕС-ШКОЛЫ СИНЕРГИЯ.</h4>
+                  <p>Эксперт в Системном развитии Личности, Почетный Профессор Бизнес-Школы Синергия. Самый популярный тренер личностного роста в русскоязычном мире.</p>
+                  <p>Количество подписчиков на его посты и видео в соц.сетях более 1 200 000 человек. За неделю охват его публикаций превышает 10 млн просмотров.</p>
+                  <p> Его книги-тренинги проданы более 800 000 экземпляров.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionPaket">
+      <div class="container">
+        <div class="row">
+          <div class="sectionPaket__Box">
+            <div class="sectionPaket__titlep">
+              <img src="img/minGreen.svg" alt="">
+              <p>Пакеты участия в программе</p>
+            </div>
+            <div class="sectionPaket__TopBox">
+              <h3>Выберите удобный пакет участия в программе, </h3>
+              <p> чтобы за 60 дней освоить приемы и техники инвестирования в недвижимость и запустить Вашу работающую модель получения дохода на этом инструменте. </p>
+            </div>
+            <div class="sectionPaket__All">
+              <div class="BronOne">
+                <div class="BronOne__accordion">
+                  <div class="BronOne__title ">
+                    <img src="img/O.png" class="imgO" alt="">
+                    <p>Базовый Новичок </p>
+                  </div>
+                  <div class="BronOne__accordionBox">
+                    <input type="checkbox" id="tab12" name="tab-group">
+                    <label for="tab12" class="BronOne__label"></label>
+                    <section class="BronOne__content">
+                      <div class="BronOne__list">
+                        <div class="BronOne__center">
+                          <p> 7 Основных модулей <img src="img/tick.png" alt="">
+                          </p>
+                          <p> PDF-файлы презентаций <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Чек-листы <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Доступ к видеоурокам на протяжении 6 месяцев <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Удобные сервисы, программы, таблицы для ведения бизнеса <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Доступ к Telegram- чату потока <img src="img/tick.png" alt="">
+                          </p>
+                          <h4> Доступ к Telegram-чату всех учеников, партнеров, инвесторов <img src="img/Group.png" alt="">
+                          </h4>
+                          <h4> 30 дней онлайн-поддержки после курса <img src="img/Group.png" alt="">
+                          </h4>
+                          <h4> Проверка домашних заданий куратором <img src="img/Group.png" alt="">
+                          </h4>
+                          <h4> Доступ к 8-у модулю <img src="img/Group.png" alt="">
+                          </h4>
+                          <h4> Возможность получить ответ лично от Дениса Фетисова на протяжении курса (ценность $300) <img src="img/Group.png" alt="">
+                          </h4>
+                          <p> Ценность <span>$1 860 </span>
+                          </p>
+                          <p> Цена обычная <span class="per"> $385 </span>
+                          </p>
+                          <div class="footGroup">
+                            <h3> $290 <p>Цена сейчас</p>
+                            </h3>
+                            <button>
+                              <p>забронировать</p>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="BronOne__accordion">
+                  <div class="BronOne__title">
+                    <img src="img/Oz.png" class="imgO" alt="">
+                    <p class="green">Стандарт Предприниматель</p>
+                  </div>
+                  <div class="BronOne__accordionBox">
+                    <input type="checkbox" id="tab13" name="tab-group">
+                    <label for="tab13" class="BronOne__label"></label>
+                    <section class="BronOne__content">
+                      <div class="BronOne__list">
+                        <div class="BronOne__center">
+                          <p> 7 Основных модулей <img src="img/tick.png" alt="">
+                          </p>
+                          <p> PDF-файлы презентаций <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Чек-листы <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Доступ к видеоурокам на протяжении 6 месяцев <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Удобные сервисы, программы, таблицы для ведения бизнеса <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Доступ к Telegram- чату потока <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Доступ к Telegram-чату всех учеников, партнеров, инвесторов <img src="img/tick.png" alt="">
+                          </p>
+                          <p> 30 дней онлайн-поддержки после курса <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Проверка домашних заданий куратором <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Доступ к 8-у модулю <img src="img/tick.png" alt="">
+                          </p>
+                          <h4> Возможность получить ответ лично от Дениса Фетисова на протяжении курса (ценность $300) <img src="img/Group.png" alt="">
+                          </h4>
+                          <p> Ценность <span>$2 110</span>
+                          </p>
+                          <p> Цена обычная <span class="per"> $650 </span>
+                          </p>
+                          <div class="footGroup">
+                            <h3> $450 <p>Цена сейчас</p>
+                            </h3>
+                            <button class="buttonGreen">
+                              <p>забронировать</p>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="BronOne__accordion">
+                  <div class="BronOne__title jol">
+                    <img src="img/Oj.png" class="imgO" alt="">
+                    <p class="jol"> VIP Магнат</p>
+                  </div>
+                  <div class="BronOne__accordionBox">
+                    <input type="checkbox" id="tab11" name="tab-group">
+                    <label for="tab11" class="BronOne__label"></label>
+                    <section class="BronOne__content">
+                      <div class="BronOne__list">
+                        <div class="BronOne__center">
+                          <p> 7 Основных модулей <img src="img/tick.png" alt="">
+                          </p>
+                          <p> PDF-файлы презентаций <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Чек-листы <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Доступ к видеоурокам на протяжении 6 месяцев <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Удобные сервисы, программы, таблицы для ведения бизнеса <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Доступ к Telegram- чату потока <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Доступ к Telegram-чату всех учеников, партнеров, инвесторов <img src="img/tick.png" alt="">
+                          </p>
+                          <p> 30 дней онлайн-поддержки после курса <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Проверка домашних заданий куратором <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Доступ к 8-у модулю <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Возможность получить ответ лично от Дениса Фетисова на протяжении курса (ценность $300) <img src="img/tick.png" alt="">
+                          </p>
+                          <p> Ценность <span>$2 410</span>
+                          </p>
+                          <p> Цена обычная <span class="per"> $1 500 </span>
+                          </p>
+                          <div class="footGroup">
+                            <h3> $1 270 <p>Цена сейчас</p>
+                            </h3>
+                            <button class="buttonjol">
+                              <p>забронировать</p>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clockw">
+        <div class="clockx"></div>
+        <div class="message"></div>
+      </div>
+      <div class="clockw__title">
+        <p>Не упусти свой шанс!!!</p>
+      </div>
+    </section>
+    <section class="sectionIcon">
+      <div class="container">
+        <div class="row">
+          <div class="sectionIcon__header">
+            <img src="img/minGreen.svg" alt="">
+            <p> Как это будет</p>
+          </div>
+          <div class="sectionIcon__h3">
+            <h3>Что произойдет после оплаты участия в программе “Доходная недвижимость”</h3>
+          </div>
+          <div class="sectionIcon__Box">
+            <div class="LeftBlock">
+              <img src="img/Left.png" alt="">
+            </div>
+            <div class="sectionIcon__BoxCol">
+              <div class="sectionIcon__Box-col col1">
+                <p> В течение 24 часов Вам придет доступ в личный кабинет.</p>
+                <img class="Boximg1" src="img/1.png" alt="">
+              </div>
+              <div class="sectionIcon__Box-col col2">
+                <img src="img/2.png" alt="">
+                <p>Куратор программы добавит Вас в чат потока и общий чат.</p>
+              </div>
+              <div class="sectionIcon__Box-col col3">
+                <p>Вам придет приглашение на вводное занятие. </p>
+                <img src="img/3.png" alt="">
+              </div>
+              <div class="sectionIcon__Box-col col4">
+                <img src="img/4.png" alt="">
+                <p> После него откроется доступ к Модулю 1. </p>
+              </div>
+              <div class="sectionIcon__Box-col col5">
+                <p> Вы проходите уроки, выполняете домашнее задание и отправляете отчет по нему.</p>
+                <img src="img/5.png" alt="">
+              </div>
+              <div class="sectionIcon__Box-col col6">
+                <img src="img/6.png" alt="">
+                <p>Только после этого вам откроется доступ к следующему Модулю. </p>
+              </div>
+            </div>
+          </div>
+          <div class="sectionIcon__block">
+            <p>Ваша задача проходить уроки и выполнять домашние задания в комфортном для Вас теме, сразу внедряя на практике полученные знания.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionGerb">
+      <div class="container">
+        <div class="row">
+          <div class="sectionGerb__Box">
+            <div class="sectionGerb__left">
+              <img src="img/Gerb.png" alt="">
+              <p> Здесь я должен дать Вам гарантию </p>
+            </div>
+            <div class="sectionGerb__reight">
+              <p> что верну Вам деньги за обучение, если курс Вам не подойдет или Вы не получите результатов. Но такой гарантии не будет, потому что она полностью снимает с Вас ответственность за результат.</p>
+              <p>Одно я могу гарантировать на 100%: Если вы добросовестно выполните все задания, то уже на 2-м модуле заработаете первые деньги на недвижимости, а на 3-м — окупите обучение на программе. То есть оставшиеся 5 модулей поведут вас в хороший плюс и приумножение капитала.</p>
+              <h5>Моя задача дать Вам удочку, а рыбу Вы поймаете сами.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionFooter">
+      <div class="container">
+        <div class="row">
+          <div class="sectionFooter__Box">
+            <div class="sectionFooter__TopLeft">
+              <div class="sectionFooter__header">
+                <img src="img/minGreen.svg" alt="">
+                <p>Что спрашивают</p>
+              </div>
+              <div class="sectionFooter__h3">
+                <h3>Ответы на вопросы, которые часто задают мне участники программы </h3>
+              </div>
+            </div>
+            <div class="sectionFooter__TopRight">
+              <div class="sectionFooter__TopRight-plus">
+                <div class="accordionPlus">
+                  <div class="accordion__boxPlus ">
+                    <div class="modulBoxpPlus">
+                      <p>Никогда, никуда и ничего не инвестировал. Этот курс мне подойдет? </p>
+                    </div>
+                    <input type="checkbox" id="tab14" name="tab-group">
+                    <label for="tab14" class="accordion__titlePlus"></label>
+                    <section class="accordion__contentPlus">
+                      <div class="Urok__discriptionPlus">
+                        <p>Если не разберетесь, пересмотрите еще раз, сформулируйте вопросы и задайте их в чат-поддержке на сессии вопрос-ответ. </p>
+                        <p> Безусловно. В уроках я подробно объясняю каждый шаг. Даже если Вы впервые сталкиваетесь с доходной недвижимостью, Вы легко освоите и примените материал на практике. </p>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="accordion__boxPlus ">
+                    <div class="modulBoxpPlus">
+                      <p>Как проходит обучение: онлайн или уроки уже записаны? </p>
+                    </div>
+                    <input type="checkbox" id="tab15" name="tab-group">
+                    <label for="tab15" class="accordion__titlePlus"></label>
+                    <section class="accordion__contentPlus">
+                      <div class="Urok__discriptionPlus">
+                        <p>Если не разберетесь, пересмотрите еще раз, сформулируйте вопросы и задайте их в чат-поддержке на сессии вопрос-ответ. </p>
+                        <p> Безусловно. В уроках я подробно объясняю каждый шаг. Даже если Вы впервые сталкиваетесь с доходной недвижимостью, Вы легко освоите и примените материал на практике. </p>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="accordion__boxPlus">
+                    <div class="modulBoxpPlus">
+                      <p>Сколько денег нужно вложить для начала работы? </p>
+                    </div>
+                    <input type="checkbox" id="tab16" name="tab-group">
+                    <label for="tab16" class="accordion__titlePlus"></label>
+                    <section class="accordion__contentPlus">
+                      <div class="Urok__discriptionPlus">
+                        <p>Если не разберетесь, пересмотрите еще раз, сформулируйте вопросы и задайте их в чат-поддержке на сессии вопрос-ответ. </p>
+                        <p> Безусловно. В уроках я подробно объясняю каждый шаг. Даже если Вы впервые сталкиваетесь с доходной недвижимостью, Вы легко освоите и примените материал на практике. </p>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <button id='myBtnO'>
+                <p>Задайте свой вопрос </p>
+              </button>
+              <div id='mypopupO' class="popupO">
+                <div class="popupContentO">
+                  <div class="container">
+                    <div class="row">
+                      <div class="popupBoxO">
+                        <span class="closeO">&times;</span>
+                        <div class="page__bron">
+                          <img src="img/Layer 1.png" alt="tip">
+                        </div>
+                      </div>
+                      <form action="">
+                        <div class="inputO">
+                          <label for="">
+                            <input type="text" id="name" name="name" placeholder="Имя" required>
+                            <input type="tel" id="phone" name="phone" placeholder="+380_" pattern="[0-9]{5}[0-9]{3}[0-9]{2}[0-9]{2}" required>
+                            <input type="email" id="email" pattern="" placeholder=" Эл. почта" required>
+                            <input class="You" type="text" pattern="" placeholder="Ваш вопрос" cols="10" rows="10">
+                          </label>
+                          <button class="imgOtpl">
+                            <p>ОТПРАВИТЬ</p>
+                          </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionFooter__PS">
+      <div class="container">
+        <div class="row">
+          <div class="sectionFooter__PSLeft">
+            <img src="img/manRed.png" alt="">
+          </div>
+          <div class="sectionFooter__PSRight">
+            <h3>Вы спросите: “Денис, в чем подвох? Невозможно зарабатывать, ничего не вложив.”</h3>
+            <p> И будете абсолютно правы. Вам понадобятся мои знания с опытом и Ваше время. Они тоже имеют свой денежный эквивалент, поэтому я немного слукавил.</p>
+            <p>Готовы пройти путь от новичка до магната с солидным инвестиционным портфелем и 5-значной прибылью? Присоединяйтесь к обучающей программе. </p>
+            <div id='myBtnX' class="sectionFooter__button">
+              <h4> забронировать </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionPolitc">
+      <div class="container">
+        <div class="row">
+          <div class="sectionFooter__politica">
+            <div class="sectionFooter__politicaTop">
+              <p>Политика конфиденциальности</p>
+              <p>Отказ от ответственности </p>
+              <p>Согласие с рассылкой</p>
+            </div>
+            <div class="sectionFooter__politicaBottom">
+              <div class="sectionFooter__politicaBottom-left">
+                <div class="sectionFooter__politicaBottom-img">
+                  <a href="https://twitter.com/?lang=ru"><img src="img/twitt.svg" alt="twitter"></a>
+                  <a href="https://www.instagram.com"><img src="img/F1.svg" alt="instagram"></a>
+                  <a href="https://www.facebook.com"><img src="img/fac.svg" alt="facebook"></a>
+                </div>
+                <div class="sectionFooter__politicaBottom-copy">
+                  <p>Copyright © 2019 All rights reserved</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/flipclock.js"></script>
+    <script src="js/Slide.js"></script>
+    <script src="js/lib.min.js"></script>
+  </body>
+</html>

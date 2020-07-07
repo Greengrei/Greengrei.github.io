@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+.slider {
+  width: 100%;
+  max-width: 1100px;
+  height: 100%;
+  margin: 50px auto;
+}
+
+.slick-slide {
+  margin: 30px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slide {
+  opacity: .2;
+  transition: all ease-in-out .4s;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Arrows */
+/* Dots */
+.video {
+  height: 326px;
+}
+
+.video .video_pleyer {
+  width: 100%;
+  height: 197px;
+}
+
+.video .video_h3 {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'BebasNeue';
+  color: #212128;
+  letter-spacing: 0.02em;
+}
+
+.video .video_p {
+  margin: 0;
+  margin-top: 8px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'PT Mono';
+  color: #212128;
+  font-style: normal;
+  opacity: 0.5;
+}
+
+.button_otsiv {
+  width: 100%;
+  margin-top: 91px;
+}
+
+.button_otsiv .button_otsiv-title {
+  display: flex;
+  align-items: center;
+  width: 349px;
+  height: 70px;
+  margin: 0 auto;
+  padding-left: 100px;
+  font-size: 26px;
+  line-height: 28px;
+  font-family: 'BebasNeue';
+  text-align: center;
+  color: #212128;
+  background-image: url(../img/RamOtsiv.png);
+}
+/*# sourceMappingURL=maps/slick.css.map */

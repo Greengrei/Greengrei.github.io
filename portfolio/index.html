@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <!-- ================> mobile first <===============  -->
+    <meta name="viewport" content="width=device-width">
+    <!-- ================> StyleSheet css <===============  -->
+    <link rel="stylesheet" href="css/Style.css">
+    <!-- ================> Icons <===============  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </head>
+  <body>
+
+	<!-- ================> header <===============  -->
+    <div id="my-site"></div>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div id="up-arrow"></div>
+          <div class="box__header">
+            <div class="header__logo">
+              <p class="header__title"> Green<span class="header__span">Grey</span>
+              </p>
+            </div>
+          </div>
+          <div class="box__header">
+            <div class="menu">
+              <div class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="header__burger">
+                <a id="burger-menu1" href="#my-site" class="menu-item">главная</a>
+                <a id="burger-menu2" href="#section-portfolio" class="menu-item">портфолио</a>
+                <a id="burger-menu3" href="#autobiography" class="menu-item">о себе</a>
+                <a id="burger-menui" href="#form" class=" menu-item masssender "><i
+									class="far fa-envelope"></i><span class="i">с</span>вязаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	</header>
+	<!-- ********************************************** -->
+
+    <section class="section-cover">
+      <div class="container">
+        <h1> HTML ВЕРСТАЛЬЩИК </h1>
+        <h2>Адаптивные сайты 100% соответствие макету. Валидный код.<br> Кроссбраузерно.<br>
+			</h2>
+      </div>
+      <div id="Button-box" class="Button-box">
+        <a href="#Button-box"></a>
+        <div class="Button">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </div>
+      </div>
+     
+    </section>
+    <section class="section" id="autobiography">
+      <div class="rotating-slideshow">
+        <div id="slider-main" data-position="1" data-deg="0">
+          <div id="slider-btns" class="button">
+            <a id="pos1" class="pos1" data-position="1"></a>
+            <a id="pos2" class="pos2" data-position="4"></a>
+            <a id="pos3" class="pos3" data-position="3"></a>
+            <a id="pos4" class="pos4" data-position="2"></a>
+          </div>
+          <div class="slider-overlay">
+            <div class="active" data-position="1">
+              <h3>Немного о себе</h3>
+              <p> Чернега Геннадий Васильевич<br>
+							Дата рождения: 15 ноября 1989<br>
+							Начинающий, html-верстальщик.<br><br>
+							Проходил 4-х месячные курсы в школе <a class="СyberBionic">СyberBionic</a> в направление junior-frontend, что и положило начальные интересы, заинтересованность в отрасль IT. <br>
+							Верстка проектов с адаптивным дизайном <span>(Responsive Web Design)</span> это когда дизайн сайта динамически подстраивается под разные размеры окна браузера. Верстка бестабличная (все на div(flex-box)). <br><br>
+							Знание языков:<br>
+							— украинский (родной).<br>
+							— русский (родной).<br>
+						</p>
+            </div>
+            <div data-position="2">
+              <h3>Основные направления:</h3>
+              <p> — Адаптивная кроссбраузерная верстка сайтов и лендинговых страниц.<br>
+							— Интеграция с CMS Wordpress(начальные навыки).<br>
+							— И большое желание развиваться в направлении Frontend.<br>
+						</p>
+            </div>
+            <div data-position="3">
+              <h3>Навыки:</h3>
+              <p> — Photoshop CC 2015.<br>
+							— Gulp.<br>
+							— CSS3,SASS(SCSS),HTML5.<br>
+							— Smartgrid.<br>
+							— Zeplin.<br>
+							— Javascript(jQuery)(начальный уровень).<br>
+							— Wordpress(начальный уровень).<br>
+							— Кроссбраузерная верстка (Chrome 54+, Firefox 50+, Safari Mac OS 8+, Opera 41+,
+							iOS).<br>
+							— Адаптивная верстка.<br>
+							— Валидная верстка по стандарту W3C.</p><br>
+					</div>
+                <div data-position="4">
+                  <h3>Личные и деловые качества:</h3>
+                  <p> — Аналитический ум.<br>
+							— Ответственность.<br>
+							— Стрессоустойчивость.<br>
+							— Пунктуальность.<br>
+							— Внимание к мелочам.<br>
+							— Умение объективно оценивать свои возможности для решения поставленных задач.<br>
+							— Нацеленность на результат.<br>
+							— Постоянное желание осваивать новые технологии и инструменты.<br>
+							— Отсутствие вредных привычек.</p>
+                </div>
+            </div>
+            <div class="slides">
+              <img class="active" src="img/lide1.jpg" data-position="1" alt="">
+              <img src="img/lide4.jpg" data-position="2" alt="">
+              <img src="img/lide3.jpg" data-position="3" alt="">
+              <img src="img/lide2.jpg" data-position="4" alt="">
+            </div>
+            <img class="spinner-btn" src="img/button.png" alt="">
+            <img class="spinner" src="img/slides-overlay.jpg" alt="">
+          </div>
+        </div>
+    </section>
+    <div class="title__portfolio" id="section-portfolio">
+      <h3> Портфолио </h3>
+    </div>
+    <section class="section__box">
+      <div class="container">
+        <div class="row">
+          <div class="container__box">
+            <div class="container__figure">
+              <h2>Landing</h2>
+              <p>Подробнее</p>
+            </div>
+          </div>
+          <div class="container__box">
+            <div class="container__figure">
+              <h2>Название</h2>
+              <p>Подробнее</p>
+            </div>
+          </div>
+          <div class="container__box">
+            <div class="container__figure">
+              <h2>Название</h2>
+              <p>Подробнее</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <form action="mail.php" metod="POST" id="form">
+          <div class="title__headline-form">
+            <p>Нужен сайт?</p>
+            <p class="d">Оставь заявку</p>
+          </div>
+          <div class="label-input">
+            <label>
+              <input type="text" name="user_name" value="" placeholder="Имя">
+            </label>
+            <label>
+              <input type="email" name="user_emailaddress" value="" placeholder="E-mail" required="required">
+            </label>
+            <label>
+              <textarea name="user_comments" cols="37" rows="2" placeholder="Ваше сообщение"></textarea>
+            </label>
+            <button class="button-submit" id="button" type="submit" value="">Отправить</button>
+          </div>
+        </form>
+      </div>
+	</div>
+	
+	<!-- ================> Footer <===============  -->
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__box">
+            <a href="https://www.instagram.com/?hl=ru" target="_blank"><svg aria-hidden="true" focusable="false"
+							data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14"
+							role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+							<path fill="currentColor"
+								d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+							</path>
+						</svg></a>
+            <a href="https://uk-ua.facebook.com/" target="_blank"><svg aria-hidden="true" focusable="false"
+							data-prefix="fab" data-icon="facebook-square"
+							class="svg-inline--fa fa-facebook-square fa-w-14" role="img"
+							xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+							<path fill="currentColor"
+								d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z">
+							</path>
+						</svg></a>
+          </div>
+          <div class="footer__box">
+            <a class="footer__link"><span class="span__green">Green</span><span
+							class="span__grey">Grei</span>.com.ua</a><span class="span__copy">&copy;2019</span>
+          </div>
+        </div>
+      </div>
+	</footer>
+	<!-- ********************************************** -->
+
+
+    <!-- ================> Scrypts js <===============  -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/lib.min.js"></script>
+    <!-- ********************************************** -->
+  </body>
+</html>
