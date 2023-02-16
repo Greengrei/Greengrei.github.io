@@ -1,0 +1,228 @@
+<div class="nw_slider_logo">
+	<img src="./images/vichi_cher.png">
+</div>
+<div class="nw_slider_logo_left">
+	<img src="./images/v_left_c.png">
+</div>
+<div class="nw_slider_logo_right">
+	<img src="./images/v_bel.png">
+</div>
+<section class="panel autoload" data-count="2" data-next="slide3" data-prev="slide1">
+	<div class="containerBlock">
+		<div class="franceBlock" style="	position: relative;
+		  width: 100%;
+		  height: 100%;
+		  background-image: url(../images/1/1.png);
+		  background-repeat: no-repeat;
+		  background-size: cover;">
+		</div>
+</section>
+
+<style>
+	.g img {
+		top: 1vw !important;
+	}
+
+	.nw_slider_logo {
+		position: absolute;
+		top: 1vw !important;
+		left: auto;
+		right: 3vw;
+		z-index: 9;
+		width: 13%;
+	}
+
+	section {
+		opacity: 1;
+	}
+
+	.panel {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		background-color: #fff;
+		display: table;
+	}
+
+	.containerBlock {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transform: rotate(220deg);
+	}
+
+	.franceBlock {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		align-items: center;
+	}
+
+	.france {
+		width: 50%;
+		padding: 2%;
+		position: relative;
+		height: 100vh;
+		text-align: right;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	.france img {
+		max-width: 100%;
+		position: relative;
+		z-index: 2;
+		height: 92%;
+	}
+
+	.content {
+		position: relative;
+		width: 50%;
+		flex-direction: column;
+		justify-content: center;
+		display: flex;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+
+	.desc {
+		font-size: 1.8vw;
+		position: relative;
+		padding-right: 5%;
+	}
+
+	.gamma {
+		font-size: 4.16vw;
+		color: #313131;
+		padding-bottom: 10px;
+		border-bottom: 2px solid #3eb4e9;
+		display: inline-block;
+		font-weight: bold;
+		position: relative;
+	}
+
+	.numberOne {
+		margin: 20px 0px;
+		overflow: hidden;
+	}
+
+	.numberOne>span {
+		display: inline-block;
+		align-items: flex-end;
+		padding: 2% 0%;
+		border-bottom: 2px solid #989898;
+		font-weight: bold;
+		clear: both;
+		position: relative;
+	}
+
+	span.brand {
+		font-size: 8.33vw;
+		padding-right: 0%;
+		padding-left: 0%;
+		color: #3eb4e9;
+		padding-top: 10px;
+		font-weight: bold;
+	}
+
+	.numberOneDesc {
+		font-weight: bold;
+		font-size: 3.125vw;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.numberOne>span {
+		position: relative;
+	}
+
+	.numberOneDesc>span {
+		position: relative;
+	}
+
+	.next,
+	.prev {
+		display: none;
+	}
+
+	.next {
+		bottom: 4%;
+	}
+
+	.contents {
+		/* position: relative; */
+	}
+
+	.contents p {
+		position: absolute;
+		right: 500px;
+		top: -29vw;
+		color: #3f884e;
+		font-family: 'centurygothic_bold';
+		font-size: 5vw;
+		opacity: 0;
+	}
+
+	.contents p span {
+		font-family: 'centurygothic_bold';
+		color: #000000;
+		padding-right: 1vw;
+	}
+
+
+	@media only screen and (max-device-width: 970px) {
+		.franceBlock{
+			background-position: center bottom!important;
+				}
+	}
+	
+</style>
+<script>
+	TweenMax.to('section', 0.5, {
+		opacity: 1,
+		ease: Linear.easeNone
+	})
+
+	var block_2 = new TimelineMax({
+		paused: true
+	});
+	block_2.to('.contents p', 0.7, {
+		top: 166,
+		opacity: 1,
+		ease: Back.easeOut
+	}, 0.5)
+	block_2.to('.containerBlock', 0.7, {
+		opacity: 1,
+		rotation:0,
+		ease: Back.easeOut
+	}, 0.3);
+
+	block_2.play();
+	// Автоматическое перелистывание слайда
+	// var tl = new TimelineMax({
+	// 	onComplete: function () {
+	// 		setTimeout(function () {
+	// 			TweenMax.to('section', 0.5, {
+	// 				opacity: 0,
+	// 				ease: Linear.easeNone
+	// 			});
+
+	// 			setTimeout(function () {
+	// 				nextSlide();
+	// 			}, 500);
+	// 		}, 000)
+	// 	},
+	// 	paused: true
+	// });
+
+
+
+
+	setTimeout(function () {
+		$('.next').show('slow');
+	}, 3000);
+</script>
