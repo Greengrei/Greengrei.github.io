@@ -1,126 +1,169 @@
 <div class="nw_slider_logo">
-	<img src="./images/vichi_bel.png">
+	<img src="./images/vichi_cher.png">
 </div>
 <div class="nw_slider_logo_left">
-	<img src="./images/v_left_bel.png">
+	<img src="./images/v_left_c.png">
 </div>
 <div class="nw_slider_logo_right">
-	<img src="./images/v_bel.png">
+	<img src="./images/v_right_c.png">
 </div>
-<section class="panel video" data-next="slide19" data-prev="slide17" data-count="18">
+<section class="panel video" data-next="slide19" data-prev="slide17" data-count="18" style="	position: relative;
+width: 100%;
+height: 100%;
+background-image: url(../images/17/17.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;">
+	<div class="containerBlock">
+		<div class="h2">
+			<h2>БАЛЬЗАМ ДЕРКОС  <br>ДЕНСІ-СОЛЮШН<p>ДЛЯ ВІДНОВЛЕННЯ ГУСТОТИ ТА ОБ'ЄМУ <br>ТОНКОГО ТА ОСЛАБЛЕНОГО ВОЛОССЯ</p>
+			</h2>
+		</div>
 
-	<div class="containerBlock" style="	position: relative;
-			width: 100vw;
-			height: 100vh;
-			background-image: url(../images/17/17.png);
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center;">
-
-		<div class="containerBlock">
-			<div class="containerBlock-i">
-				<img src="../images/17/17.4.png" alt="" class="img1">
-				<img src="../images/17/17.1.png" alt="" class="img2">
-				<img src="../images/17/17.2.png" alt="" class="img3">
-				<img src="../images/17/17.3.png" alt="" class="img4">
+		<div class="imag_box">
+			<div class="q" style="margin-top: 50px;"><span>КЕРАМІДИ<br></span>природні компоненти волокна волосся, <br>стимулює генерацію більш якісного волокна<br>що відновлюють пошкоджені ділянки,<br>надаючи йому еластичність і блиск</div>
+			<div class="w" style="margin-top: 50px;"><span>ВІТАМІН Е<br></span>відомий своїми антиоксидантними властивостями,<br>а також живильною і зволожувальною діями
 			</div>
 		</div>
+
+	</div>
 	</div>
 </section>
 <style>
-	.containerBlock-i {
-		margin-left: 8%;
-		margin-right: 8%;
+	.q {
+		opacity: 0;
+		position: relative;
 	}
 
-	.img1 {
-		height: 14vw;
-		width: auto;
-		transform: scale(0.2);
+	.q::before {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color: #852348;
+		left: -33px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+		top: 12px;
 	}
 
-	.img2 {
-		height: 12vw;
-		width: auto;
-		transform: scale(0.2);
+
+	.w {
+
+		opacity: 0;
+		position: relative;
 	}
 
-	.img3 {
-		height: 12vw;
-		width: auto;
-		transform: scale(0.2);
+	.w::before {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color:#852348;
+		left: -33px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+		top: 12px;
 	}
 
-	.img4 {
-		height: 12vw;
-		width: auto;
-		transform: scale(0.2);
+	.e {
+
+		opacity: 0;
+		position: relative;
 	}
 
-	.imag_box_t div {
-		margin: 0 20px;
+	.e::before {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color: #3f884e;
+		left: -33px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+		top: 12px;
 	}
 
-	.imag_box_t div #span29 {
-		font-size: 5vw;
+
+	.r {
+		opacity: 0;
+		padding-top: 10px;
+	}
+
+	.r::before {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color: #3f884e;
+		left: -33px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+		top: 12px;
+	}
+
+	.t {
+		opacity: 0;
+	}
+
+	.t::before {
+		position: absolute;
+		content: "5";
+		width: 100px;
+		height: 100px;
+		color: #c21a0e;
+		left: -70px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+	}
+
+	.t::after {
+		position: absolute;
+		content: "";
+		width: 11px;
+		height: 79px;
+		background-color: #c21a0e;
+		left: -24px;
+		top: 0;
+	}
+
+	.imag_box div {
+		color: #000000;
 		font-family: 'centurygothic';
+		font-size: 1.8vw;
+		position: relative;
+		line-height: 1;
 	}
 
-	.imag_box_t div #span48 {
-		font-size: 5vw;
-		font-family: 'centurygothic';
-	}
-
-	.imag_box .imag_box_t {
-		display: flex;
-		align-items: center;
-		max-width: 800px;
-		width: 100%;
+	.imag_box div span {
+		color: #852348;
 		font-family: 'centurygothic_bold';
 		font-size: 2vw;
-		color: #ffffff;
-		margin-bottom: 50px;
-	}
-
-	.imag_1 {
 		position: relative;
-		left: -500px;
-		opacity: 0;
+		margin-right: 22px;
+		width: 230px;
+		text-align: center;
 	}
 
-	.imag_2 {
-		opacity: 0;
-	}
 
 	.imag_box {
-		margin-top: 10vh;
-		margin-bottom: 10vh;
+		margin-top: 15vh;
 		position: relative;
-		padding-left: 150px;
-		font-family: 'centurygothic_bold';
-		font-size: 2vw;
-		color: #000000;
+		padding-left: 177px;
 		opacity: 0;
 	}
 
 
-	.imag_box .imag_1 {
-		height: 45vh;
-		width: auto;
-		padding-left: 2vw;
+
+	.h4::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 88px;
+		background: #c21a0e;
+		height: 100%;
+		width: 14px;
 	}
-
-	.imag_box .imag_2 {
-		height: 50vh;
-		width: auto;
-	}
-
-	.h4 {
-		position: relative;
-		opacity: 0;
-	}
-
-
 
 	.h4 p {
 		color: #000000;
@@ -129,48 +172,41 @@
 		padding: 25px 5px 25px 117px;
 	}
 
-	.h2 h2 p {
-		position: relative;
-		opacity: 0;
-	}
-
-	.h2 h2 p::before {
-		content: "";
-		position: absolute;
-		bottom: -38px;
-		left: 0;
-		background: #fff;
-		height: 4px;
-		width: 100%;
-	}
-
 	.h2 h2 {
-		color: #ffffff;
+		color:#852348;
 		font-family: 'centurygothic_bold';
 		font-size: 4vw;
-		margin-top: 4vw;
+		margin-top: 3vw;
 		padding-left: 7vw;
 		opacity: 0;
 	}
 
+
 	.h2 h2 p {
 		margin-top: 0px;
-		color: #bb1313;
+		color: #000000;
 		font-family: 'centurygothic_bold';
 		font-size: 2vw;
-		max-width: 604px;
+	}
+
+	.h2 h2 .span {
+		color: #fff;
+		background-color: #c21a0e;
+		font-family: 'centurygothic_bold';
+		font-size: 1.5vw;
+		padding: 10px;
+		position: relative;
+		top: -15px;
 	}
 
 	.h2 h2 span {
-		color: #3f884e;
-		font-family: 'centurygothic_bold';
+		color: #c21a0e;
 		font-size: 1.5vw;
-		margin-top: 0px;
 	}
 
 	@media only screen and (max-device-width: 970px) {
 		.h2 h2 {
-			margin-bottom: -57px;
+			font-size: 4vw;
 		}
 
 		.p {
@@ -363,36 +399,6 @@
 		background-size: cover;
 	}
 
-	@media only screen and (max-device-width: 1280px) {
-		.containerBlock-i {
-			margin-left: 15%;
-			margin-right: 14%;
-		}
-
-		.img1 {
-			height: 12vw;
-			width: auto;
-			transform: scale(0.2);
-		}
-
-		.img2 {
-			height: 10vw;
-			width: auto;
-			transform: scale(0.2);
-		}
-
-		.img3 {
-			height: 10vw;
-			width: auto;
-			transform: scale(0.2);
-		}
-
-		.img4 {
-			height: 10vw;
-			width: auto;
-			transform: scale(0.2);
-		}
-	}
 
 	@media only screen and (max-device-width: 970px) {
 
@@ -408,52 +414,12 @@
 		}
 
 		.imag_box {
-			margin-top: 13vh;
+			margin-top: 11vh;
 			position: relative;
-			padding-left: 150px;
+			padding-left: 127px;
 			font-family: 'centurygothic_bold';
-			font-size: 2vw;
 			color: #000000;
 		}
-
-		.imag_box .imag_box_t {
-			margin-bottom: 4px;
-		}
-
-		.containerBlock {
-			background-position: center top !important;
-		}
-
-		.containerBlock-i {
-			margin-left: 10%;
-			margin-right: 10%;
-		}
-
-		.img1 {
-			height: 13vw;
-			width: auto;
-			transform: scale(0.2);
-		}
-
-		.img2 {
-			height: 11vw;
-			width: auto;
-			transform: scale(0.2);
-		}
-
-		.img3 {
-			height: 11vw;
-			width: auto;
-			transform: scale(0.2);
-		}
-
-		.img4 {
-			height: 11vw;
-			width: auto;
-			transform: scale(0.2);
-		}
-
-
 	}
 </style>
 <script>
@@ -466,26 +432,29 @@
 		paused: true
 	});
 	block_efa_left.to('.h2 h2', 1, {
-		opacity: 1,
-		ease: Linear.easeNone
-	}).to('.img1', 1, {
-		scale: 1,
-		ease: Linear.easeNone
-	}).to('.img2', 1, {
-		scale: 1,
-		ease: Linear.easeNone
-	}).to('.img3', 1, {
-		scale: 1,
-		ease: Linear.easeNone
-	}).to('.img4', 1, {
-		scale: 1,
-		ease: Linear.easeNone
-	});
-
-
+			opacity: 1,
+			ease: Linear.easeNone
+		}).to('.imag_box', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		})
+		.to('.q', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		}).to('.w', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		}).to('.e', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		}).to('.r', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		}).to('.t', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		});
 	block_efa_left.play();
-
-
 
 	setTimeout(function () {
 		$('.next').show('slow');

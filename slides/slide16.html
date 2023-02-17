@@ -7,12 +7,19 @@
 <div class="nw_slider_logo_right">
 	<img src="./images/v_right_c.png">
 </div>
-<section class="panel video" data-next="slide17" data-prev="slide15" data-count="16">
+<section class="panel video" data-next="slide17" data-prev="slide15" data-count="16" style="	position: relative;
+width: 100%;
+height: 100%;
+background-image: url(../images/15/15.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;">
 
 	<div class="containerBlock">
 
 		<div class="h2">
-			<h2>ДВА КРОКИ ПРОТИ ВИПАДІННЯ<br>ВОЛОСЯ
+			<h2>КОНЦЕНТРАТ ДЕРКОС <br>ДЕНСІ-СОЛЮШН
+				<p>ДЛЯ ВІДНОВЛЕННЯ ГУСТОТИ ТА ОБ'ЄМУ <br>ТОНКОГО ТА ОСЛАБЛЕНОГО ВОЛОССЯ</p>
 			</h2>
 		</div>
 
@@ -22,19 +29,18 @@
 			<img class="imag_2" src="../images/15/15.2.png" alt="">
 		</div>
 
-
+		<div class="p">*Інструментальний тест, миттєвевикористання, ** *Інструментальний тест 5 використань шампуню
+		</div>
 
 	</div>
 </section>
 <style>
 	.p {
-		position: relative;
-		left: -1500px;
 		color: #000000;
-		font-family: 'centurygothic_bold';
+		font-family: 'centurygothic';
 		font-size: 1vw;
-		padding-left: 8vw;
-		margin-top: 50px;
+		padding-left: 26vw;
+		margin-top: 170px;
 	}
 
 	.imag_1 {
@@ -55,43 +61,31 @@
 		opacity: 0;
 	}
 
-	.imag_4 {
-		position: relative;
-		left: -1500px;
-		opacity: 0;
-	}
 
 	.imag_box {
-		margin-top: -100px;
+		margin-top: 100px;
 		display: flex;
 		width: 100%;
-		justify-content: left;
+		justify-content: start;
 	}
 
 	.imag_box .imag_1 {
-		height: 75vh;
+		height: 30vh;
 		width: auto;
 		padding-left: 2vw;
 	}
 
 	.imag_box .imag_2 {
-		height: 75vh;
+		height: 30vh;
 		width: auto;
 		padding-left: 2vw;
 	}
 
 	.imag_box .imag_3 {
-		height: 57vh;
+		height: 30vh;
 		width: auto;
 		padding-left: 2vw;
 	}
-
-	.imag_box .imag_4 {
-		height: 47vh;
-		width: auto;
-		padding-left: 2vw;
-	}
-
 
 	.h4 {
 		position: relative;
@@ -116,10 +110,10 @@
 	}
 
 	.h2 h2 {
-		color: #c21a0e;
+		color: #852348;
 		font-family: 'centurygothic_bold';
 		font-size: 4vw;
-		margin-top: 4vw;
+		margin-top: 2vw;
 		padding-left: 7vw;
 		opacity: 0;
 	}
@@ -139,17 +133,6 @@
 		margin-top: 0px;
 	}
 
-	@media only screen and (max-device-width: 12800px) {
-		.imag_box .imag_1 {
-			height: 76vh;
-		}
-
-		.imag_box .imag_2 {
-			height: 76vh;
-		}
-
-	}
-
 	@media only screen and (max-device-width: 970px) {
 		.h2 h2 {
 			margin-bottom: 100px;
@@ -157,17 +140,14 @@
 		}
 
 		.p {
-			color: #000000;
-			font-family: 'centurygothic';
-			font-size: 0.8vw;
-			display: flex;
-			align-items: center;
-			padding-left: 200px;
+			font-size: 1vw;
+			padding-left: 25vw;
+			margin-top: 150px;
 		}
 
 		.imag_box {
-			margin-top: -100px;
-
+			margin-top: -40px;
+			margin-left: 0px;
 		}
 
 
@@ -361,20 +341,15 @@
 			opacity: 1,
 			ease: Linear.easeNone
 		}).to('.imag_2', 1, {
-			left: 0,
+			left: 73,
 			opacity: 1,
 			ease: Linear.easeNone
 		}).to('.imag_3', 1, {
 			left: 73,
 			opacity: 1,
 			ease: Linear.easeNone
-		}).to('.imag_4', 1, {
-			left: 73,
-			opacity: 1,
-			ease: Linear.easeNone
 		})
 		.to('.p', 1, {
-			left: 500,
 			opacity: 1,
 			ease: Linear.easeNone
 		});

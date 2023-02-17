@@ -12,17 +12,15 @@
 	<div class="containerBlock">
 
 		<div class="h2">
-			<h2>АМПУЛИ АМІНЕКСИЛ КЛІНІКАЛ 5<br>
-				<p><span>ДЛЯ ЖІНОК </span>ЗБАЛАНСОВАНА ФОРМУЛА ПРОТИ ВИПАДІННЯ ВОЛОССЯ</p>
+			<h2>ДВА КРОКИ <span>ПРО-КЕРАТИН <br>
+				ДОГЛЯДУ</span>
 			</h2>
 		</div>
 
 		<div class="imag_box">
-			<img class="imag_1" src="../images/24/24.1.png" alt="">
-			<img class="imag_2" src="../images/24/24.2.png" alt="">
-			<img class="imag_3" src="../images/24/24.3.png" alt="">
-			<img class="imag_4" src="../images/24/24.4.png" alt="">
-			<img class="imag_5" src="../images/24/24.5.png" alt="">
+
+			<img class="imag_1" src="../images/20/20.1.png" alt="">
+			<img class="imag_2" src="../images/20/20.2.png" alt="">
 		</div>
 
 
@@ -42,82 +40,58 @@
 
 	.imag_1 {
 		position: relative;
-
+		left: -500px;
 		opacity: 0;
 	}
 
 	.imag_2 {
 		position: relative;
-
+		left: -1000px;
 		opacity: 0;
 	}
 
 	.imag_3 {
 		position: relative;
-
+		left: -1500px;
 		opacity: 0;
 	}
 
 	.imag_4 {
 		position: relative;
-
-		opacity: 0;
-	}
-
-
-	.imag_5 {
-		position: relative;
-
-		opacity: 0;
-	}
-
-	.imag_6 {
-		position: relative;
-
+		left: -1500px;
 		opacity: 0;
 	}
 
 	.imag_box {
-		margin-top: 100px;
+		margin-top: -100px;
 		display: flex;
 		width: 100%;
-		justify-content: center;
-		margin-left: -100px;
+		justify-content: left;
 	}
 
 	.imag_box .imag_1 {
-		height: 52vh;
+		height: 45vw;
 		width: auto;
+		padding-left: 2vw;
 	}
-
 	.imag_box .imag_2 {
-		height: 52vh;
+		height: 45vw;
 		width: auto;
+		padding-left: 2vw;
 	}
 
 	.imag_box .imag_3 {
-		height: 52vh;
+		height: 57vh;
 		width: auto;
-
+		padding-left: 2vw;
 	}
 
 	.imag_box .imag_4 {
-		height: 52vh;
+		height: 47vh;
 		width: auto;
-
+		padding-left: 2vw;
 	}
-
-	.imag_box .imag_5 {
-		height: 52vh;
-		width: auto;
-
-	}
-
-	.imag_box .imag_6 {
-		height: 50vh;
-		width: auto;
-
-	}
+	
 
 	.h4 {
 		position: relative;
@@ -142,10 +116,10 @@
 	}
 
 	.h2 h2 {
-		color: #c21a0e;
+		color: #000000;
 		font-family: 'centurygothic_bold';
 		font-size: 4vw;
-		margin-top: 2vw;
+		margin-top: 4vw;
 		padding-left: 7vw;
 		opacity: 0;
 	}
@@ -158,46 +132,12 @@
 
 	}
 
-	.h2 h2 span {
+	.h2 h2  span {
 		color: #c21a0e;
 		font-family: 'centurygothic_bold';
-		font-size: 1.5vw;
+		font-size: 4vw;
 		margin-top: 0px;
 	}
-
-
-	@media only screen and (max-device-width: 1280px) {
-		.imag_box {
-			margin-top: 0px;
-		}
-
-		.imag_box .imag_1 {
-			height: 60vh;
-			width: auto;
-		}
-
-		.imag_box .imag_2 {
-			height: 60vh;
-			width: auto;
-		}
-
-		.imag_box .imag_3 {
-			height: 60vh;
-			width: auto;
-		}
-
-		.imag_box .imag_4 {
-			height: 60vh;
-			width: auto;
-		}
-
-		.imag_box .imag_5 {
-			height: 60vh;
-			width: auto;
-		}
-	}
-
-
 
 	@media only screen and (max-device-width: 970px) {
 		.h2 h2 {
@@ -215,8 +155,8 @@
 		}
 
 		.imag_box {
-			margin-top: -40px;
-			margin-left: -100px;
+			margin-top: -100px;
+			
 		}
 
 
@@ -392,6 +332,8 @@
 		background-position: 50% 50%;
 		background-size: cover;
 	}
+
+
 </style>
 <script>
 	TweenMax.to('section', 0.5, {
@@ -410,7 +352,7 @@
 			opacity: 1,
 			ease: Linear.easeNone
 		}).to('.imag_2', 1, {
-			left: 73,
+			left: 0,
 			opacity: 1,
 			ease: Linear.easeNone
 		}).to('.imag_3', 1, {
@@ -418,14 +360,6 @@
 			opacity: 1,
 			ease: Linear.easeNone
 		}).to('.imag_4', 1, {
-			left: 73,
-			opacity: 1,
-			ease: Linear.easeNone
-		}).to('.imag_5', 1, {
-			left: 73,
-			opacity: 1,
-			ease: Linear.easeNone
-		}).to('.imag_6', 1, {
 			left: 73,
 			opacity: 1,
 			ease: Linear.easeNone

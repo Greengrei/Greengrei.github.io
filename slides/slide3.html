@@ -1,11 +1,11 @@
 <div class="nw_slider_logo">
-	<img src="./images/vichi_bel.png">
+	<img src="./images/vichi_cher.png">
 </div>
 <div class="nw_slider_logo_left">
-	<img src="./images/v_left_bel.png">
+	<img src="./images/v_left_c.png">
 </div>
 <div class="nw_slider_logo_right">
-	<img src="./images/v_bel.png">
+	<img src="./images/v_right_c.png">
 </div>
 <section class="panel autoload" data-count="3" data-next="slide4" data-prev="slide2">
 	<div class="containerBlock" style="	position: relative;
@@ -18,42 +18,14 @@
 
 
 		<div class="h2">
-			<h2>ВИПАДІННЯ ВОЛОССЯ<br><span>ПОШИРЕНІСТЬ ТА АКТУАЛЬНІСТЬ ПРОБЛЕМИ</span></h2>
+			<h2>ЧОМУ ДЕРКОС?</h2>
 		</div>
 
 		<div class="crock_bocks">
 			<div class="crock1p">
 				<div class="crock1p_right"><img src="../images/2/2.1.png" alt=""></div>
-				<div class="crock1p_left">
-					<div><span id="pan50">52</span>%</div>
-					<p>ЧОЛОВІКІВ У ЄВРОПІ <br> ПЕРЕЙМАЮТЬСЯ ПРОЯВАМИ <br> ПЕРЕДЧАСНОЇ ВТРАТИ <br>ВОЛОССЯ*</p>
-				</div>
 			</div>
 
-			<div class="crock2p">
-				<div class="crock2p_left"><img src="../images/2/2.2.png" alt=""></div>
-				<div class="crock2p_right">
-					<div class="crock2p_left_bottom">
-						<div><span id="pan60">60</span>%</div>
-						<p>ЖІНОК У ЄВРОПІ ПЕРЕЙМАЮТЬСЯ<br> ПРОЯВАМИ ПЕРЕДЧАСНОЇ ВТРАТИ<br> ВОЛОССЯ*</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="crock3p">
-				<div class="crock3p_left"><img src="../images/2/2.3.png" alt=""></div>
-				<div class="crock3p_right">
-					<div class="crock3p_left_bottom">
-						<div>№7</div>
-						<p>ПРИЧИНА ДЛЯ ЗВЕРНЕННЯ ДО ЛІКАРЯ-<br> ДЕРМАТОЛОГА**</p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="tex">
-			<p>*Дослідження IPSOS 2003, 30.000 учасників з Європи **Міжнародний дерматологічний барометр </p>
 		</div>
 
 		<style>
@@ -111,7 +83,6 @@
 				margin: 0;
 				color: #ffffff;
 			}
-
 
 
 			.crock3p_left_bottom {
@@ -200,7 +171,7 @@
 			}
 
 			.crock1p_right img {
-				height: 10vh;
+				height: 45vh;
 				width: auto;
 			}
 
@@ -263,7 +234,6 @@
 				width: 40%;
 				color: #6cd3d9;
 				z-index: 2;
-
 			}
 
 			.crock2img img {
@@ -315,9 +285,9 @@
 
 			.h2 h2 {
 
-				color: #c21a0e;
+				color: #000000;
 				font-family: 'centurygothic_bold';
-				font-size: 3vw;
+				font-size: 5vw;
 				margin-top: 0vw;
 				padding-left: 7vw;
 			}
@@ -339,7 +309,7 @@
 				font-size: 2vw;
 				margin-top: 2vw;
 				padding-left: 22.5vw;
-				width: 40%;
+				width: 100%;
 				color: #6cd3d9;
 			}
 
@@ -375,24 +345,15 @@
 				text-align: center;
 				font-family: 'centurygothic';
 				font-size: 1.4vw;
-				width: 35%;
-				margin-left: -5.8vw;
+				width: 100%;
 				z-index: 1;
 				position: relative;
 				opacity: 0;
-				left: -350px;
+				transform: scale(0);
 			}
 
 
-			@media only screen and (max-device-width: 1280px) {
-				.tex {
-					margin-top: 53px;
-					margin-left: 465px;
-					font-family: 'centurygothic';
-					font-size: 1vw;
-					color: #ffffff;
-				}
-			}
+			@media only screen and (max-device-width: 970px) {}
 		</style>
 	</div>
 </section>
@@ -1243,21 +1204,8 @@
 	var block_anim = new TimelineMax({
 		paused: true
 	});
-	block_anim.to('.block_img', 1, {
-			opacity: 1,
-			ease: Linear.easeNone
-		})
-		.to('.crock1p', 2, {
-			left: 200,
-			opacity: 1,
-			ease: Linear.easeNone
-		})
-		.to('.crock2p', 2, {
-			left: 20,
-			opacity: 1,
-			ease: Linear.easeNone
-		}).to('.crock3p', 2, {
-			left: 50,
+	block_anim.to('.crock1p', 2, {
+			scale: 1,
 			opacity: 1,
 			ease: Linear.easeNone
 		});
@@ -1265,35 +1213,7 @@
 
 
 
-	var Contt = {
-			val: 0
-		},
-		NewVal = 52;
-
-	TweenLite.to(Contt, 8, {
-		val: NewVal,
-		roundProps: "val",
-		onUpdate: function () {
-			document.getElementById("pan50").innerHTML = Contt.val;
-		}
-
-	});
-
-	var Contr = {
-			val: 0
-		},
-		NewVal = 60;
-
-	TweenLite.to(Contr, 10, {
-		val: NewVal,
-		roundProps: "val",
-		onUpdate: function () {
-			document.getElementById("pan60").innerHTML = Contr.val;
-		}
-	});
-
-
 	setTimeout(function () {
 		$('.next').show('slow');
-	}, 10000);
+	}, 5000);
 </script>

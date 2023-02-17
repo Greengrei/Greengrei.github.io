@@ -7,107 +7,159 @@
 <div class="nw_slider_logo_right">
 	<img src="./images/v_right_c.png">
 </div>
-<section class="panel video" data-next="slide16" data-prev="slide14" data-count="15">
-
+<section class="panel video" data-next="slide16" data-prev="slide14" data-count="15" style="	position: relative;
+width: 100%;
+height: 100%;
+background-image: url(../images/14/14.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;">
 	<div class="containerBlock">
-
 		<div class="h2">
-			<h2>ПОРІВНЯННЯ<br>
-				<p>ДЕРКОС АМІНЕКСИЛ та ДЕРКОС ЕНЕРДЖИ +</p>
+			<h2>КОНЦЕНТРАТ ДЕРКОС <br>ДЕНСІ-СОЛЮШН<p>ДЛЯ ВІДНОВЛЕННЯ ГУСТОТИ ТА ОБ'ЄМУ <br>ТОНКОГО ТА ОСЛАБЛЕНОГО ВОЛОССЯ</p>
 			</h2>
 		</div>
 
 		<div class="imag_box">
-
-			<img class="imag_1" src="../images/14/14.1.png" alt="">
-			<img class="imag_2" src="../images/14/14.2.png" alt="">
-			<img class="imag_3" src="../images/14/14.3.png" alt="">
-			<img class="imag_4" src="../images/14/14.4.png" alt="">
+			<div class="q" style="margin-top: 50px;"><span>СТЕМОКСИДИН<br></span>запатенована молекула з клінічно доказаною<br>ефективністю, що стимулює ріст  волосся</div>
+			<div class="w" style="margin-top: 50px;"><span>РЕСВЕРАТРОЛ<br></span>поліфенол, що підсилює дію молекули <br>стемоксидину і захищає шкіру голови від впливу<br>вільних радикалів</div>
 		</div>
 
-
-
+	</div>
 	</div>
 </section>
 <style>
-	.p {
+	.q {
+		opacity: 0;
 		position: relative;
-		left: -1500px;
-		color: #000000;
+	}
+
+	.q::before {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color: #852348;
+		left: -33px;
 		font-family: 'centurygothic_bold';
-		font-size: 1vw;
-		padding-left: 8vw;
-		margin-top: 50px;
+		font-size: 4vw;
+		top: 12px;
 	}
 
-	.imag_1 {
+
+	.w {
+
+		opacity: 0;
 		position: relative;
-		left: -500px;
+	}
+
+	.w::before {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color:#852348;
+		left: -33px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+		top: 12px;
+	}
+
+	.e {
+
+		opacity: 0;
+		position: relative;
+	}
+
+	.e::before {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color: #3f884e;
+		left: -33px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+		top: 12px;
+	}
+
+
+	.r {
+		opacity: 0;
+		padding-top: 10px;
+	}
+
+	.r::before {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color: #3f884e;
+		left: -33px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+		top: 12px;
+	}
+
+	.t {
 		opacity: 0;
 	}
 
-	.imag_2 {
-		position: relative;
-		left: -1000px;
-		opacity: 0;
+	.t::before {
+		position: absolute;
+		content: "5";
+		width: 100px;
+		height: 100px;
+		color: #c21a0e;
+		left: -70px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
 	}
 
-	.imag_3 {
-		position: relative;
-		left: -1500px;
-		opacity: 0;
+	.t::after {
+		position: absolute;
+		content: "";
+		width: 11px;
+		height: 79px;
+		background-color: #c21a0e;
+		left: -24px;
+		top: 0;
 	}
 
-	.imag_4 {
+	.imag_box div {
+		color: #000000;
+		font-family: 'centurygothic';
+		font-size: 1.8vw;
 		position: relative;
-		left: -1500px;
-		opacity: 0;
+		line-height: 1;
 	}
+
+	.imag_box div span {
+		color: #852348;
+		font-family: 'centurygothic_bold';
+		font-size: 2vw;
+		position: relative;
+		margin-right: 22px;
+		width: 230px;
+		text-align: center;
+	}
+
 
 	.imag_box {
-		margin-top: 100px;
-		display: flex;
-		width: 100%;
-		justify-content: center;
-		margin-left: -100px;
-	}
-
-	.imag_box .imag_1 {
-		height: 47vh;
-		width: auto;
-		padding-left: 2vw;
-	}
-
-	.imag_box .imag_2 {
-		height: 56vh;
-		width: auto;
-		padding-left: 2vw;
-	}
-
-	.imag_box .imag_3 {
-		height: 57vh;
-		width: auto;
-		padding-left: 2vw;
-	}
-
-	.imag_box .imag_4 {
-		height: 47vh;
-		width: auto;
-		padding-left: 2vw;
-	}
-
-
-	.h4 {
+		margin-top: 15vh;
 		position: relative;
+		padding-left: 177px;
 		opacity: 0;
 	}
+
+
 
 	.h4::before {
 		content: "";
 		position: absolute;
 		top: 0;
 		left: 88px;
-		background: #3f884e;
+		background: #c21a0e;
 		height: 100%;
 		width: 14px;
 	}
@@ -120,55 +172,40 @@
 	}
 
 	.h2 h2 {
-		color: #c21a0e;
+		color:#852348;
 		font-family: 'centurygothic_bold';
 		font-size: 4vw;
-		margin-top: 2vw;
+		margin-top: 3vw;
 		padding-left: 7vw;
 		opacity: 0;
 	}
+
 
 	.h2 h2 p {
 		margin-top: 0px;
 		color: #000000;
 		font-family: 'centurygothic_bold';
 		font-size: 2vw;
+	}
 
+	.h2 h2 .span {
+		color: #fff;
+		background-color: #c21a0e;
+		font-family: 'centurygothic_bold';
+		font-size: 1.5vw;
+		padding: 10px;
+		position: relative;
+		top: -15px;
 	}
 
 	.h2 h2 span {
 		color: #c21a0e;
-		font-family: 'centurygothic_bold';
 		font-size: 1.5vw;
-		margin-top: 0px;
-	}
-
-	@media only screen and (max-device-width: 1280px) {
-		.imag_box {
-			margin-top: 34px;
-		}
-
-		.imag_box .imag_1 {
-			height: 56vh;
-		}
-
-		.imag_box .imag_2 {
-			height: 66vh;
-		}
-
-		.imag_box .imag_3 {
-			height: 67vh;
-		}
-
-		.imag_box .imag_4 {
-			height: 56vh;
-		}
 	}
 
 	@media only screen and (max-device-width: 970px) {
 		.h2 h2 {
-			margin-bottom: 100px;
-			padding-top: 21px;
+			font-size: 4vw;
 		}
 
 		.p {
@@ -177,15 +214,17 @@
 			font-size: 0.8vw;
 			display: flex;
 			align-items: center;
-			padding-left: 200px;
+			padding-top: 100px;
 		}
 
 		.imag_box {
 			margin-top: -40px;
-			margin-left: -100px;
 		}
 
-
+		.imag_box .imag_1 {
+			height: 45vh;
+			width: auto;
+		}
 	}
 
 	.block_efa-right p {
@@ -358,6 +397,29 @@
 		background-position: 50% 50%;
 		background-size: cover;
 	}
+
+
+	@media only screen and (max-device-width: 970px) {
+
+		.p {
+			color: #000000;
+			font-family: 'centurygothic';
+			font-size: 0.8vw;
+			display: flex;
+			align-items: center;
+			margin-right: 200px;
+			margin-top: -100px;
+			line-height: 1;
+		}
+
+		.imag_box {
+			margin-top: 11vh;
+			position: relative;
+			padding-left: 127px;
+			font-family: 'centurygothic_bold';
+			color: #000000;
+		}
+	}
 </style>
 <script>
 	TweenMax.to('section', 0.5, {
@@ -371,25 +433,23 @@
 	block_efa_left.to('.h2 h2', 1, {
 			opacity: 1,
 			ease: Linear.easeNone
-		}).to('.imag_1', 1, {
-			left: 73,
-			opacity: 1,
-			ease: Linear.easeNone
-		}).to('.imag_2', 1, {
-			left: 73,
-			opacity: 1,
-			ease: Linear.easeNone
-		}).to('.imag_3', 1, {
-			left: 73,
-			opacity: 1,
-			ease: Linear.easeNone
-		}).to('.imag_4', 1, {
-			left: 73,
+		}).to('.imag_box', 1, {
 			opacity: 1,
 			ease: Linear.easeNone
 		})
-		.to('.p', 1, {
-			left: 500,
+		.to('.q', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		}).to('.w', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		}).to('.e', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		}).to('.r', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		}).to('.t', 1, {
 			opacity: 1,
 			ease: Linear.easeNone
 		});

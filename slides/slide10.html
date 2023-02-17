@@ -1,11 +1,11 @@
 <div class="nw_slider_logo">
-	<img src="./images/vichi_cher.png">
+	<img src="./images/vichi_bel.png">
 </div>
 <div class="nw_slider_logo_left">
 	<img src="./images/v_left_c.png">
 </div>
 <div class="nw_slider_logo_right">
-	<img src="./images/v_right_c.png">
+	<img src="./images/v_bel.png">
 </div>
 <section class="panel video" data-next="slide11" data-prev="slide9" data-count="10" style="	position: relative;
 width: 100%;
@@ -14,100 +14,165 @@ background-image: url(../images/9/9.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;">
-
-	<div class="h2">
-		<h2>ДЕРКОС ЕНЕРДЖИ + <span class="span">РЕНОВАЦІЯ </span><br>
-			<p>ДЕРМАТОЛОГІЧНО АКТИВНІ ІНГРЕДІЄНТИ <br><span>АМІНЕКСИЛ</span></p>
-		</h2>
-	</div>
-
-	<div class="imag_box">
-		<p>Покращує кровообіг навколо волосяних фолікулів<br>(амінексил розширює судини, активізує кровообіг<br> навколо волосяних фолікулів та, за рахунок<br> цього, покращує живлення коренів волосся)</p>
-		
-		<p>Попереджує затвердіння колагену навколо <br>волосяних цибулин</p>
-	</div>
-
-
 	<div class="containerBlock">
-		<div class="flexContainer">
+		<div class="h2">
+			<h2>ДЕРКОС МІКРОПІЛ <p>ШАМПУНЬ-ПІЛІНГ 3 В 1</p>
+			</h2>
+		</div>
+
+		<div class="imag_box">
+
+			<div class="q" style="margin-top: 50px;"><span>ШАМПУНЬ</span> Миттєво усуває<br>видиму лупу</div>
+			<div class="w" style="margin-top: 50px;"><span>ПІЛІНГ</span>Ефективно усуває лусочки <br>лупи, що прилипли
+			</div>
+			<div class="e" style="margin-top: 50px;"><span>МАСКА</span> Глибоко очищує<br>шкіру голови</div>
 
 		</div>
+
+
+
 	</div>
 	</div>
 </section>
 <style>
-	.imag_box div {
+	.q {
+		display: flex;
+		opacity: 0;
+		position: relative;
+	}
+
+	.q::before {
+		position: absolute;
+		content: "1";
+		width: 100px;
+		height: 100px;
 		color: #3f884e;
-		line-height: 0;
-		position: relative;
-		left: -500px;
-		opacity: 0;
-	}
-
-	.imag_box p {
-		position: relative;
-		left: -500px;
-		opacity: 0;
-	}
-
-	.p {
-		position: relative;
-		left: -1500px;
-		color: #000000;
+		left: -70px;
 		font-family: 'centurygothic_bold';
-		font-size: 1vw;
-		padding-left: 8vw;
-		margin-top: 50px;
+		font-size: 4vw;
+		top: -11px;
 	}
 
-	.imag_1 {
-		position: relative;
-		left: -500px;
+
+
+	.w {
+		display: flex;
 		opacity: 0;
-	}
-
-	.imag_2 {
-		opacity: 0;
-	}
-
-	.imag_box {
-		margin-top: 20vh;
 		position: relative;
-		padding-left: 150px;
+	}
+
+	.w::before {
+		position: absolute;
+		content: "2";
+		width: 100px;
+		height: 100px;
+		color: #3f884e;
+		left: -70px;
 		font-family: 'centurygothic_bold';
-		font-size: 2vw;
-		color: #000000;
+		font-size: 4vw;
+		top: -22px;
 	}
 
-	.imag_box::before {
+	.e {
+		display: flex;
+		opacity: 0;
+		position: relative;
+	}
+
+	.e::before {
+		position: absolute;
+		content: "3";
+		width: 100px;
+		height: 100px;
+		color: #3f884e;
+		left: -70px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+		top: -8px;
+	}
+
+
+	.r {
+		opacity: 0;
+		padding-top: 10px;
+	}
+
+	.r::before {
+		position: absolute;
+		content: "4";
+		width: 100px;
+		height: 100px;
+		color: #3f884e;
+		left: -70px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+		top: -8px;
+	}
+
+	.r::after {
 		position: absolute;
 		content: "";
-		top: -31px;
-		left: 95px;
-		width: 12px;
-		height: 126%;
+		width: 11px;
+		height: 90px;
 		background-color: #c21a0e;
-		margin-left: 10px;
-		font-family: 'centurygothic_bold';
-		font-size: 2vw;
-		color: #000000;
+		left: -24px;
+		top: 0;
 	}
 
-	.imag_box .imag_1 {
-		height: 45vh;
-		width: auto;
-		padding-left: 2vw;
-	}
-
-	.imag_box .imag_2 {
-		height: 50vh;
-		width: auto;
-	}
-
-	.h4 {
-		position: relative;
+	.t {
 		opacity: 0;
 	}
+
+	.t::before {
+		position: absolute;
+		content: "5";
+		width: 100px;
+		height: 100px;
+		color: #c21a0e;
+		left: -70px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+	}
+
+	.t::after {
+		position: absolute;
+		content: "";
+		width: 11px;
+		height: 79px;
+		background-color: #c21a0e;
+		left: -24px;
+		top: 0;
+	}
+
+	.imag_box div {
+		color: #3f884e;
+		font-family: 'centurygothic_bold';
+		font-size: 1.8vw;
+		position: relative;
+		line-height: 1;
+	}
+
+	.imag_box div span {
+		color: #ffffff;
+		font-family: 'centurygothic_bold';
+		font-size: 2vw;
+		position: relative;
+		background-color: #3f884e;
+		padding: 10px;
+		margin-right: 22px;
+		width: 230px;
+		text-align: center;
+	}
+
+
+	.imag_box {
+		margin-top: 15vh;
+		position: relative;
+		padding-left: 177px;
+		opacity: 0;
+	}
+
+
 
 	.h4::before {
 		content: "";
@@ -127,10 +192,10 @@ background-position: center;">
 	}
 
 	.h2 h2 {
-		color: #c21a0e;
+		color: #3f884e;
 		font-family: 'centurygothic_bold';
-		font-size: 4vw;
-		margin-top: 4vw;
+		font-size: 5vw;
+		margin-top: 3vw;
 		padding-left: 7vw;
 		opacity: 0;
 	}
@@ -141,7 +206,6 @@ background-position: center;">
 		color: #000000;
 		font-family: 'centurygothic_bold';
 		font-size: 2vw;
-
 	}
 
 	.h2 h2 .span {
@@ -151,17 +215,17 @@ background-position: center;">
 		font-size: 1.5vw;
 		padding: 10px;
 		position: relative;
-top: -15px;
+		top: -15px;
 	}
 
 	.h2 h2 span {
 		color: #c21a0e;
-	
+		font-size: 1.5vw;
 	}
 
 	@media only screen and (max-device-width: 970px) {
 		.h2 h2 {
-			margin-bottom: -57px;
+			font-size: 4vw;
 		}
 
 		.p {
@@ -369,11 +433,10 @@ top: -15px;
 		}
 
 		.imag_box {
-			margin-top: 13vh;
+			margin-top: 11vh;
 			position: relative;
-			padding-left: 150px;
+			padding-left: 159px;
 			font-family: 'centurygothic_bold';
-			font-size: 2vw;
 			color: #000000;
 		}
 	}
@@ -390,13 +453,23 @@ top: -15px;
 	block_efa_left.to('.h2 h2', 1, {
 			opacity: 1,
 			ease: Linear.easeNone
-		}).to('.imag_box div', 1, {
-			left: 0,
+		}).to('.imag_box', 1, {
 			opacity: 1,
 			ease: Linear.easeNone
 		})
-		.to('.imag_box p', 1, {
-			left: 0,
+		.to('.q', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		}).to('.w', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		}).to('.e', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		}).to('.r', 1, {
+			opacity: 1,
+			ease: Linear.easeNone
+		}).to('.t', 1, {
 			opacity: 1,
 			ease: Linear.easeNone
 		});

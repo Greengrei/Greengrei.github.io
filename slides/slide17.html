@@ -16,18 +16,15 @@ background-size: cover;
 background-position: center;">
 	<div class="containerBlock">
 		<div class="h2">
-			<h2>ДЕРКОС АМІНЕКСИЛ<br>
-				<p>АМПУЛИ ПРОТИ ВИПАДІННЯ ВОЛОССЯ<span><br>Ефективний проти рецидивного <br>або сталого випадіння
-						волосся від стресу,<br>втоми підходить для чутливої шкіри голови
-					</span></p>
+			<h2>ШАМПУНЬ ДЕРКОС <br>ДЕНСІ-СОЛЮШН<p>ДЛЯ ВІДНОВЛЕННЯ ГУСТОТИ ТА ОБ'ЄМУ <br>ТОНКОГО ТА ОСЛАБЛЕНОГО ВОЛОССЯ</p>
 			</h2>
 		</div>
 
 		<div class="imag_box">
-			<img src="../images/16/16.1.png" alt="">
+			<div class="q" style="margin-top: 50px;"><span>РАМНОЗА<br></span>рослинний сахарид, що зміцнює волосяні фолікули та<br>стимулює генерацію більш якісного волокна</div>
+			<div class="w" style="margin-top: 50px;"><span>ФІЛОКСАН<br></span>інноваційна молекула, здатна проникати <br>всередину волосся і зв'язуватися з його<br>білковими структурами, завдяки чому<br>збільшується діаметр волося
+			</div>
 		</div>
-
-
 
 	</div>
 	</div>
@@ -35,47 +32,126 @@ background-position: center;">
 <style>
 	.q {
 		opacity: 0;
+		position: relative;
 	}
 
+	.q::before {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color: #852348;
+		left: -33px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+		top: 12px;
+	}
+
+
 	.w {
+
 		opacity: 0;
+		position: relative;
+	}
+
+	.w::before {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color:#852348;
+		left: -33px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+		top: 12px;
 	}
 
 	.e {
+
 		opacity: 0;
+		position: relative;
 	}
+
+	.e::before {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color: #3f884e;
+		left: -33px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+		top: 12px;
+	}
+
 
 	.r {
 		opacity: 0;
+		padding-top: 10px;
+	}
+
+	.r::before {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color: #3f884e;
+		left: -33px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+		top: 12px;
 	}
 
 	.t {
 		opacity: 0;
 	}
 
-	.imag_box img {
-		margin-left: 5vw;
-		height: 40vh;
-		width: auto;
+	.t::before {
+		position: absolute;
+		content: "5";
+		width: 100px;
+		height: 100px;
+		color: #c21a0e;
+		left: -70px;
+		font-family: 'centurygothic_bold';
+		font-size: 4vw;
+	}
+
+	.t::after {
+		position: absolute;
+		content: "";
+		width: 11px;
+		height: 79px;
+		background-color: #c21a0e;
+		left: -24px;
+		top: 0;
+	}
+
+	.imag_box div {
+		color: #000000;
+		font-family: 'centurygothic';
+		font-size: 1.8vw;
+		position: relative;
+		line-height: 1;
 	}
 
 	.imag_box div span {
-		color: #000000;
+		color: #852348;
 		font-family: 'centurygothic_bold';
-		font-size: 1.8vw;
+		font-size: 2vw;
 		position: relative;
-
+		margin-right: 22px;
+		width: 230px;
+		text-align: center;
 	}
 
 
 	.imag_box {
 		margin-top: 15vh;
 		position: relative;
-
+		padding-left: 177px;
 		opacity: 0;
 	}
-
-
 
 
 
@@ -97,7 +173,7 @@ background-position: center;">
 	}
 
 	.h2 h2 {
-		color: #c21a0e;
+		color:#852348;
 		font-family: 'centurygothic_bold';
 		font-size: 4vw;
 		margin-top: 3vw;
@@ -128,20 +204,9 @@ background-position: center;">
 		font-size: 1.5vw;
 	}
 
-	@media only screen and (max-device-width: 1280px) {
-		.imag_box {
-			margin-top: 4vh;
-		}
-
-		.imag_box img {
-			margin-left: 5vw;
-			height: 45vh;
-		}
-	}
-
 	@media only screen and (max-device-width: 970px) {
 		.h2 h2 {
-			margin-bottom: -57px;
+			font-size: 4vw;
 		}
 
 		.p {
@@ -349,9 +414,9 @@ background-position: center;">
 		}
 
 		.imag_box {
-			margin-top: 9vh;
+			margin-top: 11vh;
 			position: relative;
-			padding-left: 7px;
+			padding-left: 127px;
 			font-family: 'centurygothic_bold';
 			color: #000000;
 		}
