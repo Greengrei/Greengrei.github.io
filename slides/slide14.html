@@ -1,64 +1,60 @@
 <div class="nw_slider_logo">
-	<img src="./images/vichi_cher.png">
+	<img src="./images/vichi_bel.png">
 </div>
 <div class="nw_slider_logo_left">
-	<img src="./images/v_left_c.png">
+	<img src="./images/v_left_bel.png">
 </div>
 <div class="nw_slider_logo_right">
-	<img src="./images/v_right_c.png">
+	<img src="./images/v_bel.png">
 </div>
-<section class="panel video" data-next="slide15" data-prev="slide13" data-count="14"  style="	position: relative;
-width: 100%;
-height: 100%;
-background-image: url(../images/13/13.png);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;">
+<section class="panel video" data-next="slide15" data-prev="slide13" data-count="14" style="	position: relative;
+		width: 100%;
+		height: 100%;
+		background-image: url(../images/13/13.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;">
 
-	<div class="franceBlock">
+	<div class="containerBlock">
 
 		<div class="h2">
-			<h2>ДЕРКОС ДС<br>
-				<p>БІОЛОГІЧНА ДІЯ САЛІЦИЛОВОЇ КИСЛОТИ</p>
+			<h2>КОМПЛЕКСНЕ<br>ЗАСТОСУВАННЯ
+				<p>ДЕРКОС АМПУЛ КЛІНІКАЛ 5 <br>З ШАМПУНЕМ ДЕРКОС ЕНЕРДЖИ+</p>
 			</h2>
 		</div>
 
 		<div class="imag_box">
-			<div>КЕРАТОЛІТИЧНИЙ ЕФЕКТ:</div>
-			<p>допомагає розчинити міжклітинний<br> цемент, і таким чином, відділяє лусочки<br> від поверхні шкіри голови,
-				тим самим<br> сприяючи її очищенню
-			</p>
+			<div class="imag_box_t">на <div><span id="span29"> 29</span> %</div>ЗМЕНШУЄТЬСЯ ВИПАДІННЯ<br> ВОЛОССЯ*</div>
+			<div class="imag_box_t">в <div> 3 </div> РАЗИ СИЛЬНІШЕ ВОЛОССЯ **</div>
+			<div class="imag_box_t">на <div><span id="span48">48</span> %</div>БІЛЬШЕ ОБ’ЄМУ**</div>
 		</div>
 
-
-		<div class="containerBlock">
-			
-		</div>
 	</div>
 </section>
 <style>
-	.imag_box div {
-		color: #3f884e;
-		line-height: 0;
-		position: relative;
-		left: -500px;
-		opacity: 0;
+	.imag_box_t div {
+		margin: 0 20px;
 	}
 
-	.imag_box p {
-		position: relative;
-		left: -500px;
-		opacity: 0;
+	.imag_box_t div #span29 {
+		font-size: 5vw;
+		font-family: 'centurygothic';
 	}
 
-	.p {
-		position: relative;
-		left: -1500px;
-		color: #000000;
+	.imag_box_t div #span48 {
+		font-size: 5vw;
+		font-family: 'centurygothic';
+	}
+
+	.imag_box .imag_box_t {
+		display: flex;
+		align-items: center;
+		max-width: 800px;
+		width: 100%;
 		font-family: 'centurygothic_bold';
-		font-size: 1vw;
-		padding-left: 8vw;
-		margin-top: 50px;
+		font-size: 2vw;
+		color: #ffffff;
+		margin-bottom: 22px;
 	}
 
 	.imag_1 {
@@ -72,27 +68,16 @@ background-position: center;">
 	}
 
 	.imag_box {
-		margin-top: 20vh;
+		margin-top: 13vh;
+		margin-bottom: 10vh;
 		position: relative;
 		padding-left: 150px;
 		font-family: 'centurygothic_bold';
 		font-size: 2vw;
 		color: #000000;
+		opacity: 0;
 	}
 
-	.imag_box::before {
-		position: absolute;
-		content: "";
-		top: -31px;
-		left: 95px;
-		width: 12px;
-		height: 126%;
-		background-color: #3f884e;
-		margin-left: 10px;
-		font-family: 'centurygothic_bold';
-		font-size: 2vw;
-		color: #000000;
-	}
 
 	.imag_box .imag_1 {
 		height: 45vh;
@@ -110,15 +95,7 @@ background-position: center;">
 		opacity: 0;
 	}
 
-	.h4::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 88px;
-		background: #3f884e;
-		height: 100%;
-		width: 14px;
-	}
+
 
 	.h4 p {
 		color: #000000;
@@ -127,8 +104,23 @@ background-position: center;">
 		padding: 25px 5px 25px 117px;
 	}
 
+	.h2 h2 p {
+		position: relative;
+		opacity: 0;
+	}
+
+	.h2 h2 p::before {
+		content: "";
+		position: absolute;
+		bottom: -38px;
+		left: 0;
+		background: #fff;
+		height: 4px;
+		width: 100%;
+	}
+
 	.h2 h2 {
-		color: #3f884e;
+		color: #ffffff;
 		font-family: 'centurygothic_bold';
 		font-size: 4vw;
 		margin-top: 4vw;
@@ -138,10 +130,10 @@ background-position: center;">
 
 	.h2 h2 p {
 		margin-top: 0px;
-		color: #000000;
+		color: #bb1313;
 		font-family: 'centurygothic_bold';
 		font-size: 2vw;
-
+		max-width: 604px;
 	}
 
 	.h2 h2 span {
@@ -173,6 +165,7 @@ background-position: center;">
 			height: 45vh;
 			width: auto;
 		}
+		
 	}
 
 	.block_efa-right p {
@@ -361,12 +354,20 @@ background-position: center;">
 		}
 
 		.imag_box {
-			margin-top: 20vh;
+			margin-top: 13vh;
 			position: relative;
 			padding-left: 150px;
 			font-family: 'centurygothic_bold';
 			font-size: 2vw;
 			color: #000000;
+		}
+
+		.imag_box .imag_box_t {
+			margin-bottom: 4px;
+		}
+		.panel {
+			background-image: url(../images/13/13-m.png);
+			
 		}
 	}
 </style>
@@ -382,19 +383,47 @@ background-position: center;">
 	block_efa_left.to('.h2 h2', 1, {
 			opacity: 1,
 			ease: Linear.easeNone
-		}).to('.imag_box div', 1, {
-			left: 0,
+		}).to('.h2 h2 p ', 1, {
 			opacity: 1,
 			ease: Linear.easeNone
 		})
-		.to('.imag_box p', 1, {
-			left: 0,
+		.to('.imag_box', 1, {
 			opacity: 1,
 			ease: Linear.easeNone
 		});
+
+
 	block_efa_left.play();
+
+
+	var Contt = {
+			val: 0
+		},
+		NewVal = 29;
+
+	TweenLite.to(Contt, 8, {
+		val: NewVal,
+		roundProps: "val",
+		onUpdate: function () {
+			document.getElementById("span29").innerHTML = Contt.val;
+		}
+
+	});
+
+	var Contr = {
+			val: 0
+		},
+		NewVal = 48;
+
+	TweenLite.to(Contr, 10, {
+		val: NewVal,
+		roundProps: "val",
+		onUpdate: function () {
+			document.getElementById("span48").innerHTML = Contr.val;
+		}
+	});
 
 	setTimeout(function () {
 		$('.next').show('slow');
-	}, 3000);
+	}, 10000);
 </script>

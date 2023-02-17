@@ -7,61 +7,101 @@
 <div class="nw_slider_logo_right">
 	<img src="./images/v_right_c.png">
 </div>
-<section class="panel autoload" data-count="8" data-next="slide9" data-prev="slide7">
+<section class="panel video" data-next="slide9" data-prev="slide7" data-count="8" style="	position: relative;
+width: 100%;
+height: 100%;
+background-image: url(../images/7/7.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;">
 
 	<div class="h2">
-		<h2>ДЕРКОС ДС<br>
-			<p>НЕЗБАЛАНСОВАНА МІКРОБНА ДІЯ MALASSEZIA<br><span>
-					Негативний вплив Malassezia на життєдіяльність кератиноцитів</span></p>
-
+		<h2>ДЕРКОС ЕНЕРДЖИ + <span class="span">РЕНОВАЦІЯ </span><br>
+			<p>ДЕРМАТОЛОГІЧНО АКТИВНІ ІНГРЕДІЄНТИ <br><span>АНА-КИСЛОТИ</span></p>
 		</h2>
 	</div>
 
 	<div class="imag_box">
-		<img class="imag_1" src="../images/7/7.1.png" alt="">
-		<img class="imag_2" src="../images/7/7.2.png" alt="">
+		<p>Допомагають підтримувати правильний<br> рH шкіри голови та волосяних фолікулів</p>
+		<p>Антиоксидантні властивості</p>
+		<p>Зміцнюють волосся</p>
 	</div>
 
-	<div class="p">*Donnarumma G. Arch Dermatol Res. 2014; 06(8):763-8.</div>
+
 	<div class="containerBlock">
 		<div class="flexContainer">
 
 		</div>
 	</div>
+	</div>
 </section>
 <style>
+	.imag_box div {
+		color: #3f884e;
+		line-height: 0;
+		position: relative;
+		left: -500px;
+		opacity: 0;
+	}
+
+	.imag_box p {
+		position: relative;
+		left: -500px;
+		opacity: 0;
+	}
+
 	.p {
+		position: relative;
+		left: -1500px;
 		color: #000000;
-		font-family: 'centurygothic';
+		font-family: 'centurygothic_bold';
 		font-size: 1vw;
-		float: right;
+		padding-left: 8vw;
 		margin-top: 50px;
-		margin-right: 180px;
 	}
 
 	.imag_1 {
 		position: relative;
-		bottom: -500px;
+		left: -500px;
 		opacity: 0;
 	}
 
 	.imag_2 {
-		position: relative;
-		top: -1000px;
 		opacity: 0;
 	}
 
-
 	.imag_box {
-		display: flex;
-		width: 100%;
-		justify-content: center;
+		margin-top: 20vh;
+		position: relative;
+		padding-left: 150px;
+		font-family: 'centurygothic_bold';
+		font-size: 2vw;
+		color: #000000;
 	}
 
-	.imag_box img {
+	.imag_box::before {
+		position: absolute;
+		content: "";
+		top: -31px;
+		left: 95px;
+		width: 12px;
+		height: 126%;
+		background-color: #c21a0e;
+		margin-left: 10px;
+		font-family: 'centurygothic_bold';
+		font-size: 2vw;
+		color: #000000;
+	}
+
+	.imag_box .imag_1 {
+		height: 45vh;
+		width: auto;
+		padding-left: 2vw;
+	}
+
+	.imag_box .imag_2 {
 		height: 50vh;
 		width: auto;
-
 	}
 
 	.h4 {
@@ -74,7 +114,7 @@
 		position: absolute;
 		top: 0;
 		left: 88px;
-		background: #3f884e;
+		background: #c21a0e;
 		height: 100%;
 		width: 14px;
 	}
@@ -87,13 +127,15 @@
 	}
 
 	.h2 h2 {
-		color: #3f884e;
+		padding-top: 70px;
+		color: #c21a0e;
 		font-family: 'centurygothic_bold';
 		font-size: 4vw;
 		margin-top: 4vw;
 		padding-left: 7vw;
 		opacity: 0;
 	}
+
 
 	.h2 h2 p {
 		margin-top: 0px;
@@ -103,14 +145,44 @@
 
 	}
 
-	.h2 h2 span {
-		color: #3f884e;
+	.h2 h2 .span {
+		color: #fff;
+		background-color: #c21a0e;
 		font-family: 'centurygothic_bold';
 		font-size: 1.5vw;
-		margin-top: 0px;
+		padding: 10px;
+		position: relative;
+top: -15px;
 	}
 
+	.h2 h2 span {
+		color: #c21a0e;
+	
+	}
 
+	@media only screen and (max-device-width: 970px) {
+		.h2 h2 {
+			margin-bottom: -57px;
+		}
+
+		.p {
+			color: #000000;
+			font-family: 'centurygothic';
+			font-size: 0.8vw;
+			display: flex;
+			align-items: center;
+			padding-top: 100px;
+		}
+
+		.imag_box {
+			margin-top: -40px;
+		}
+
+		.imag_box .imag_1 {
+			height: 45vh;
+			width: auto;
+		}
+	}
 
 	.block_efa-right p {
 		font-family: 'centurygothic_bold';
@@ -226,17 +298,17 @@
 	}
 
 	/* .containerBlock
-    {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top:0;
-        left:0;
-        background-image: url("https://s3-eu-west-1.amazonaws.com/derma.club/presa_files/laEf/images/29/bg.jpg");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: cover;
-    } */
+	 {
+		  width: 100%;
+		  height: 100%;
+		  position: absolute;
+		  top:0;
+		  left:0;
+		  background-image: url("https://s3-eu-west-1.amazonaws.com/derma.club/presa_files/laEf/images/29/bg.jpg");
+		  background-repeat: no-repeat;
+		  background-position: 50% 50%;
+		  background-size: cover;
+	 } */
 	.categoryWrapper {
 		position: absolute;
 		width: 100%;
@@ -284,12 +356,7 @@
 	}
 
 
-
-
 	@media only screen and (max-device-width: 970px) {
-		.h2 h2 {
-			margin-bottom: 0px;
-		}
 
 		.p {
 			color: #000000;
@@ -297,14 +364,18 @@
 			font-size: 0.8vw;
 			display: flex;
 			align-items: center;
-			padding-left: 700px;
-			padding-top: 0px;
-			margin-top: 0px;
-
+			margin-right: 200px;
+			margin-top: -100px;
+			line-height: 1;
 		}
 
 		.imag_box {
-			margin-top: -30px;
+			margin-top: 20vh;
+			position: relative;
+			padding-left: 150px;
+			font-family: 'centurygothic_bold';
+			font-size: 2vw;
+			color: #000000;
 		}
 	}
 </style>
@@ -320,17 +391,13 @@
 	block_efa_left.to('.h2 h2', 1, {
 			opacity: 1,
 			ease: Linear.easeNone
-		}).to('.imag_1', 1, {
-			bottom: 0,
+		}).to('.imag_box div', 1, {
+			left: 0,
 			opacity: 1,
 			ease: Linear.easeNone
 		})
-		.to('.imag_2', 1, {
-			top: 0,
-			opacity: 1,
-			ease: Linear.easeNone
-		})
-		.to('.imag_3', 1, {
+		.to('.imag_box p', 1, {
+			left: 0,
 			opacity: 1,
 			ease: Linear.easeNone
 		});

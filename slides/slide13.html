@@ -15,28 +15,26 @@
 	background-size: cover;
 	background-position: center;">
 
-		<div class="franceBlock" >
+		<div class="containerBlock">
 
 			<div class="h2">
-				<h2>ДЕРКОС ДС<br>
-					<p>БІОЛОГІЧНА ДІЯ ДИСУЛЬФІДУ СЕЛЕНУ<br><span>Широкий спектр дії на мікробіом шкіри голови:</span></p>
+				<h2>ДЕРКОС ЕНЕРДЖИ +<br>
+					<p>СТИМУЛЮЮЧИЙ ШАМПУНЬ<br><span>Підходить для щоденного використання для чутливої шкіри<br> голови.
+							Гіпоалергенний.</span></p>
 				</h2>
 			</div>
 
 			<div class="imag_box">
 
 				<img class="imag_1" src="../images/12/12.1.png" alt="">
-
+				<img class="imag_2" src="../images/12/12.2.png" alt="">
+				<img class="imag_3" src="../images/12/12.3.png" alt="">
 			</div>
 
-			<div class="p">Шампунь на основі дисульфіду селену призводить до значного зниження Malassezia<br> Restricta
-				та Staphylococcus epidermidis до кількості, рівній нормальному стану здорової шкіри голови
+			<div class="p">*Інструментальний тест після використання шампуню Energy +.<br> **Інструментальний тест, 5
+				використань шампуню
 			</div>
-			<div class="containerBlock">
-				<div class="flexContainer">
 
-				</div>
-			</div>
 		</div>
 	</section>
 	<style>
@@ -46,7 +44,7 @@
 			color: #000000;
 			font-family: 'centurygothic_bold';
 			font-size: 1vw;
-			padding-left: 11vw;
+			padding-left: 8vw;
 			margin-top: 50px;
 		}
 
@@ -57,26 +55,43 @@
 		}
 
 		.imag_2 {
+			position: relative;
+			left: -1000px;
+			opacity: 0;
+		}
+
+		.imag_3 {
+			position: relative;
+			left: -1500px;
 			opacity: 0;
 		}
 
 
 		.imag_box {
+			margin-top: 50px;
 			display: flex;
 			width: 100%;
 			justify-content: start;
 		}
 
 		.imag_box .imag_1 {
-			height: 45vh;
+			height: 40vh;
+			width: auto;
+			padding-left: 2vw;
+		}
+		.imag_box .imag_2 {
+			height: 40vh;
 			width: auto;
 			padding-left: 2vw;
 		}
 
-		.imag_box .imag_2 {
-			height: 50vh;
+		.imag_box .imag_3 {
+			height: 40vh;
 			width: auto;
+			padding-left: 2vw;
 		}
+
+		
 
 		.h4 {
 			position: relative;
@@ -101,10 +116,10 @@
 		}
 
 		.h2 h2 {
-			color: #3f884e;
+			color: #c21a0e;
 			font-family: 'centurygothic_bold';
 			font-size: 4vw;
-			margin-top: 4vw;
+			margin-top: 2vw;
 			padding-left: 7vw;
 			opacity: 0;
 		}
@@ -118,7 +133,7 @@
 		}
 
 		.h2 h2 span {
-			color: #3f884e;
+			color: #c21a0e;
 			font-family: 'centurygothic_bold';
 			font-size: 1.5vw;
 			margin-top: 0px;
@@ -126,8 +141,8 @@
 
 		@media only screen and (max-device-width: 970px) {
 			.h2 h2 {
-				margin-bottom: 50px;
-				padding-top: 0px;
+				margin-bottom: 100px;
+				padding-top: 21px;
 			}
 
 			.p {
@@ -136,19 +151,14 @@
 				font-size: 0.8vw;
 				display: flex;
 				align-items: center;
-				padding-top: 100px;
 				padding-left: 200px;
 			}
 
 			.imag_box {
 				margin-top: -40px;
+				margin-left: 0px;
 			}
 
-			.imag_box .imag_1 {
-				height: 43vh;
-				width: auto;
-				padding-left: 5vw;
-			}
 
 		}
 
@@ -324,19 +334,6 @@
 		}
 
 
-		@media only screen and (max-device-width: 970px) {
-
-			.p {
-				color: #000000;
-				font-family: 'centurygothic';
-				font-size: 0.8vw;
-				display: flex;
-				align-items: center;
-				margin-right: 200px;
-				margin-top: -100px;
-				line-height: 1;
-			}
-		}
 	</style>
 	<script>
 		TweenMax.to('section', 0.5, {
@@ -354,9 +351,17 @@
 				left: 73,
 				opacity: 1,
 				ease: Linear.easeNone
+			}).to('.imag_2', 1, {
+				left: 73,
+				opacity: 1,
+				ease: Linear.easeNone
+			}).to('.imag_3', 1, {
+				left: 73,
+				opacity: 1,
+				ease: Linear.easeNone
 			})
 			.to('.p', 1, {
-				left: -20,
+				left: 500,
 				opacity: 1,
 				ease: Linear.easeNone
 			});
