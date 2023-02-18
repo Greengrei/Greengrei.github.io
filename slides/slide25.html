@@ -14,11 +14,30 @@
 		  height: 100%;
 		  background-image: url(../images/24/24.png);
 		  background-repeat: no-repeat;
-		  background-size: cover;">
+		  background-size: cover;
+		  background-position: center;">
+
+			<div class="img_tre"> <img src="../images/24/24.1.png" alt=""></div>
+
 		</div>
 </section>
 
 <style>
+	.img_tre {
+		display: flex;
+		width: 100%;
+		justify-content: flex-start;
+	}
+
+	.img_tre img {
+		width: 31vw;
+		height: auto;
+		opacity: 1;
+		position: relative;
+		left: -1000px;
+		transform: rotate(-2080deg);
+	}
+
 	.g img {
 		top: 1vw !important;
 	}
@@ -172,11 +191,10 @@
 
 
 	@media only screen and (max-device-width: 970px) {
-		.franceBlock{
-			background-position: center bottom!important;
-				}
+		.franceBlock {
+			background-position: center bottom !important;
+		}
 	}
-	
 </style>
 <script>
 	TweenMax.to('section', 0.5, {
@@ -187,13 +205,13 @@
 	var block_2 = new TimelineMax({
 		paused: true
 	});
-	block_2.to('.contents p', 0.7, {
-		top: 166,
-		opacity: 1,
-		ease: Back.easeOut
-	}, 0.5)
 	block_2.to('.containerBlock', 0.7, {
 		opacity: 1,
+		rotation: 0,
+		ease: Back.easeOut
+	}, 0.3).to('.img_tre img', 5, {
+		opacity: 1,
+		left: 0,
 		rotation:0,
 		ease: Back.easeOut
 	}, 0.3);

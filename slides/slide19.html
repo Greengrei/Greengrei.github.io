@@ -66,18 +66,19 @@
 	}
 
 	.imag_box {
-		margin-top: 100px;
+		margin-top: 0px;
 		display: flex;
 		width: 100%;
 		justify-content: center;
 		margin-left: -100px;
+		margin-bottom: -30px;
 	}
 
 	.imag_box .imag_1 {
 		height: 30vw;
 		width: auto;
 		padding-left: 2vw;
-		
+
 	}
 
 	.imag_box .imag_2 {
@@ -146,6 +147,26 @@
 		margin-top: 0px;
 	}
 
+	@media only screen and (max-device-width: 1280px) {
+		.imag_box .imag_1 {
+			height: 26vw;
+			width: auto;
+			padding-left: 2vw;
+		}
+
+		.imag_box .imag_2 {
+			height: 26vw;
+			width: auto;
+			padding-left: 2vw;
+		}
+
+		.imag_box .imag_3 {
+			height: 26vw;
+			width: auto;
+			padding-left: 2vw;
+		}
+	}
+
 	@media only screen and (max-device-width: 970px) {
 		.h2 h2 {
 			margin-bottom: 100px;
@@ -162,7 +183,7 @@
 		}
 
 		.imag_box {
-			margin-top: -40px;
+			margin-top: -90px;
 			margin-left: -100px;
 		}
 
@@ -353,7 +374,7 @@
 			opacity: 1,
 			ease: Linear.easeNone
 		}).to('.imag_1', 1, {
-			rotation:0,
+			rotation: 0,
 			left: 73,
 			opacity: 1,
 			ease: Linear.easeNone
@@ -362,7 +383,7 @@
 			opacity: 1,
 			ease: Linear.easeNone
 		}).to('.imag_3', 1, {
-			rotation:0,
+			rotation: 0,
 			left: 73,
 			opacity: 1,
 			ease: Linear.easeNone
